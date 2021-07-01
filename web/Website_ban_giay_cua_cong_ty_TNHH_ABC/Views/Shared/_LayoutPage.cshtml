@@ -1,0 +1,343 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link media="all" disabled=""
+          href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,500i,600,700,700i;display=swap"
+          rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css">
+    <link rel="stylesheet" href="~/Content/index.css">
+    <link rel="stylesheet" href="~/Content/Home.css">
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <div id="header-top">
+                <div class="container">
+                    <div class="row-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="dis_flex flex_wrap flex_content_between flex_align_center">
+                                <div class="header-item-hotline">
+                                    <a href="#">Hotline: 0984 943 851 (8h- 12h, 13h30 - 17h)</a>
+                                </div>
+                                <div class="header-item"><a href="#">Liên hệ hợp tác</a></div>
+                                <div class="header-item"><a href="#">Kiểm tra đơn hàng</a></div>
+                                <div class="header-item"><a href="#">Kiểm tra đơn hàng</a></div>
+
+                                <div class="header-item-login">
+                                    <span><a href="#">Đăng nhập</a></span>
+                                    <span>|</span>
+                                    <span><a href="#">Đăng ký</a></span>
+                                </div>
+                                <div class="header-item-logo">
+                                    <img src="~/image/images/vi.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="header-bottom">
+                <div class="container">
+                    <div class="row-1">
+                        <div class="visible-xs visible-sm"></div>
+                        <div class=" first-logo">
+                            <div class="logo-wrap">
+                                <div class="svg-logo">
+                                    <img src="~/image/images/bitis_logo1200.png" alt="">
+                                    <a></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" header-bottom-menu">
+                            <ul id="main-menu" class="clearfix">
+                                <li class="has-child">
+                                    <a href="~/Views/Home/Index.cshtml">HOME</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">NAM</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">NỮ</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">GOSTO</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">BÉ TRAI</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">BÉ GÁI</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="#">PHỤ KIỆN</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-bottom-search">
+                            <div class="search-form">
+                                <form class="search-form-swap">
+                                    <input type="text" class="textbox" placeholder="Nhập thông tin bạn...">
+                                    <button title="Search" value="" type="submit" class="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="header-bottom-cart">
+                            <div class="menu-cart">
+                                <div class="cart-child">
+                                    <a href="#" >
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="cart-child">
+                                    <a href="#" >
+                                        <span id="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                        <span id="cart-count">0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main clas="main-content">
+            <section id="slider">
+                <div class="slider-wrapper-outter">
+                    <div class="wrapper">
+
+                        @RenderSection("slider", required: true);
+
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="announcement">
+                <div class="container">
+                    <div class="row-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="annuouncement-slider">
+                                <div class="owl-wrapper-outter">
+                                    <div class="owl-wrapper">
+                                        <div class="owl-item">
+                                            <div class="annuouncement-item">
+                                                <img src="~/image/images/icon_announcemen_2.png"
+                                                     alt="">
+                                                <span class="annuouncement-title">
+                                                    ĐỔI SIZE MIỄN PHÍ
+                                                </span>
+                                                <span class="annuouncement-text">
+                                                    Tại tất cả cửa hàng trong vòng 1 tuần
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="owl-controls-clickable">
+                                        <div class="owl-button">
+                                            <div class="owl-prev">
+                                                <span><i class="fas fa-angle-left"></i></span>
+                                            </div>
+                                            <div class="owl-next">
+                                                <span><i class="fas fa-angle-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="banner-cate">
+                <div class="container">
+                    <div class="row-2">
+                        <div class="banner-cate-hasd-child">
+                            <a href="#"><img src="../image/baner-cate/banner-cate-1_76bca9574e71406cb7536394202d76ad_master.jpg"></a>
+                        </div>
+                        <div class="banner-cate-hasd-child">
+                            <a href="#">
+                                <img src="../image/baner-cate/banner-cate-2_d5cc77ab5fa34ae5bea38ff9413ad60f_master.jpg">
+                            </a>
+                        </div>
+                        <div class="banner-cate-hasd-child">
+                            <a href="#">
+                                <img src="../image/baner-cate/banner-cate-3_06b272263c19450b9705f942567fc05c_master.jpg">
+                            </a>
+                        </div>
+                        <div class="banner-cate-hasd-child">
+                            <a href="#">
+                                <img src="../image/baner-cate/banner-cate-5_513967e8e2f54fec9d5d88ecde42f23c_master.jpg">
+                            </a>
+                        </div>
+                        <div class="banner-cate-hasd-child">
+                            <a href="#">
+                                <img src="../image/baner-cate/banner-cate-6_2700ab7c2d1649078d83f11f48115883_master.jpg">
+                            </a>
+                        </div>
+                        <div class="banner-cate-hasd-child">
+                            <a href="#">
+                                <img src="../image/baner-cate/banner-cate-7_01a820ce4bbf4faa9c51db18bda5634c_master.jpg">
+                            </a>
+                        </div>
+                        <div class="banner-cate-hasd-child">
+                            <a href="#">
+                                <img src="../image/baner-cate/untitled-1-1_04edd88faa7c4c38912c668ba987728e_master.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @RenderBody()
+            </section>
+
+
+        </main>
+        <footer>
+            <seletion class="footer-hashtag">
+                <div class="footer-hashtag-title">
+                    <h2>
+                        HASHTAG
+                        <a href="#">
+                            BITIS
+                        </a>
+                        ĐỂ CÓ CƠ HỘI XUẤT HIỆN TRÊN WEBSITE CHÚNG TÔI
+                    </h2>
+                </div>
+                <div class="footer-hashtag-images">
+                    <ul>
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/1.png" alt="">
+                            </a>
+                        </li>
+
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/3.png" alt="">
+                            </a>
+                        </li>
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/4.png" alt="">
+                            </a>
+                        </li>
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/5.png" alt="">
+                            </a>
+                        </li>
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/6.png" alt="">
+                            </a>
+                        </li>
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/7.png" alt="">
+                            </a>
+                        </li>
+                        <li class="item-hashtag">
+                            <a>
+                                <img src="../image/mau/8.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </seletion>
+            <section class="footer-email">
+                <div class="container">
+                    <div class="row-2">
+                        <div class="footer-email-title-wrapper-outter">
+                            <div class="footer-email-title">
+                                ĐĂNG KÝ EMAIL ĐỂ NHẬN THÊM NHIỀU THÔNG TIN MỚI TỪ CHÚNG TÔI
+                            </div>
+                            <div class="footer-email-input">
+                                <span><input placeholder="Nhập E-mail của bạn..."></span>
+                                <span><button>Đăng ký</button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="footer-info">
+                <div class="container">
+                    <div class="row-2">
+                        <div class="footer-info-item">
+                            <div class="item-info">
+                                <h2 class="information">Lập Trình Web .HK3CQ2</h2>
+                                <br />
+                                <p class="
+                            information">Full name : Đoàn Minh Khánh</p>
+                                <p class="
+                            information">Student code : 1924801030111</p>
+                                <p class="
+                            information">Class : D19PM02</p>
+                            </div>
+                            <div class="item-info">
+                                <h2 class="information">Liên hệ</h2>
+                                <br />
+                                <p class="
+                            information">Zalo : 0984943851</p>
+                                <p class="
+                            information">
+                                    Facabook <a href="https://www.facebook.com/profile.php?id=100013505409162"
+                                                target="_blank">Minh Khánh</a>
+                                </p>
+                                <p class="
+                            information">Email : khanhdoan693@gmail.com</p>
+                                <p class="
+                            information">SĐT : 0984943851</p>
+                            </div>
+
+                            <div class="item-info">
+                                <span>
+                                    <h1>Have a nice day, see you soon... </h1>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="footer-bottom">
+                <div class="container">
+                    <div class="row-2">
+                        <div class="footer-bottom-item">
+                            <span>
+                                <h1>Website bán giày dép của công ty TNHH ABC </h1>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

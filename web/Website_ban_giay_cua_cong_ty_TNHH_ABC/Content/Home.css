@@ -1,0 +1,254 @@
+a{
+    text-decoration:none;
+}
+#banner-cate .container .row-2 {
+  display: grid;
+  grid-template-areas:
+    "t1 t2 t2 t3 t3"
+    "t1 t4 t5 t6 t7";
+  grid-template-columns: 230px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 186.3px 186.3px;
+  grid-gap: 10px;
+}
+#banner-cate .container .row-2 .banner-cate-hasd-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.banner-cate-hasd-child:nth-child(1) {
+  grid-area: t1;
+}
+.banner-cate-hasd-child:nth-child(2) {
+  grid-area: t2;
+}
+.banner-cate-hasd-child:nth-child(3) {
+  grid-area: t4;
+}
+.banner-cate-hasd-child:nth-child(4) {
+  grid-area: t3;
+}
+.banner-cate-hasd-child:nth-child(5) {
+  grid-area: t6;
+}
+.banner-cate-hasd-child:nth-child(6) {
+  grid-area: t7;
+}
+.banner-cate-hasd-child:nth-child(7) {
+  grid-area: t5;
+}
+
+/* --home-cate-title-- */
+.home-cate-box{
+    position: relative;
+    margin-top: 25px;
+}
+.home-cate-box-title {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.home-cate-box-title .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  background: #034ea1;
+  display: inline-block;
+  color: #fff;
+  padding: 0;
+  width: 225px;
+  height: 26px;
+}
+
+.home-cate-text {
+  text-align: center;
+  
+}
+.home-cate-text:hover a{
+    color: red;
+    
+}
+.home-cate-text a {
+  display: inline-block;
+  font-weight: 1000;
+  font-size: 16px;
+  height: 50px;
+
+}
+
+/* --home-cate-item-- */
+.home-cate-box-content {
+  position: relative;
+}
+.product-carousel{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.home-cate-box-content .wrapper-outter {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper-item {
+    position: relative;
+  width: 234px;
+  float: left;
+  padding: 5px 5px;
+}
+
+.product-list-item {
+  padding: 7px;
+  cursor: pointer;
+}
+.product-item {
+  height: 435px;
+}
+.product-image {
+  height: 214px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.product-list-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.product-decs{
+    padding-top: 10px;
+}
+.product-list-item:hover .variant-text{
+    display: none;
+
+}
+.product-list-item:hover .size-box{
+    display: block;
+
+}
+.variant-text{
+    font-weight: 300;
+    font-size: 12px;
+    display: block;
+}
+.product-variant-box{
+    border-bottom: 1px solid #e1e1e1;
+    min-height: 55px;
+}
+.size-box{
+    display: none;
+}
+.size-item{
+    min-width: 25px;
+    padding: 0 5px;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid transparent;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.product-name a{
+    color: #000;
+    font-size: 17px;
+}
+.product-name:hover{
+    color: red;
+}
+.product-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    white-space: nowrap;
+    padding-top: 10px;
+}
+
+.group-name{
+    display: grid;
+    grid-template-areas: "t1 t2";
+    grid-template-columns: 1fr 1fr;
+}
+.name-item{
+    grid-area: t1;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #000;
+    padding-top: 5px;
+}
+.group-name .div{
+    grid-area: t2;
+}
+
+.product-price{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.price{
+    color: #ed4e4e;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.product-action{
+    display: none;
+    padding-top: 10px;
+}
+.product-action button{
+    width: 100%;
+    background: #f72b3f;
+    text-align: center;
+    padding: 0;
+    border: none;
+    padding: 9px 5px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0;
+    font-size: 15px;
+}
+.product-list-item:hover .product-action{
+    display: block;
+    transition: 0.5s;
+}
+
+/* --arrow-slider-- */
+.arrow-product-slider{
+    position: absolute;
+}
+.btn-prev-next {   
+    padding-top: 230px;   
+    cursor: pointer;
+}
+.btn-prev-next .btn-next svg{
+    margin-left: 1265px;
+    position: absolute;
+}
+.btn-prev-next .btn-prev svg{
+    margin-left: -65px;
+}
+.btn-prev-next svg:hover{
+    color: red;
+}
+.btn-prev-next svg{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    color: #000;   
+    font-size: 25px;
+}
+
+/* --home-cate-banner-- */
+.home-cate-banner{
+  margin-top: 25px;
+}
+.home-cate-banner img{
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}

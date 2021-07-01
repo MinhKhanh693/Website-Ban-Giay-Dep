@@ -1,0 +1,814 @@
+﻿
+@model dynamic
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@section slider{
+    <div id="wrapper-item">
+        <div>
+            <a>
+                <img src="~/image/images/page-TrangChu-1.jpg"
+                     alt="">
+            </a>
+        </div>
+        <div>
+            <a>
+                <img src="~/image/images/page-TrangChu-2.jpg"
+                     alt="">
+            </a>
+        </div>
+        <div>
+            <a>
+                <img src="~/image/images/page-TrangChu-3.jpg"
+                     alt="">
+            </a>
+        </div>
+        <div>
+            <a>
+                <img src="~/image/images/page-TrangChu-4.jpg"
+                     alt="">
+            </a>
+        </div>
+        <div>
+            <a>
+                <img src="~/image/images/bia 11.jpg"
+                     alt="">
+            </a>
+        </div>
+    </div>
+    <script>
+        $("#wrapper-item > div:gt(0)").hide();
+        setInterval(function () {
+            $('#wrapper-item > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#wrapper-item');
+        }, 3000);
+    </script>
+
+}
+
+
+<!-- --NAM-- -->
+<section class="home-cate-box">
+    <div class="container">
+        <div class="row-2">
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-title">
+                    <div class="home-cate-box-title">
+                        <h2 class="title">NAM</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row-2">
+                    <div class="home-cate-box-content">
+                        <div class="arrow-product-slider">
+                            <div class="btn-prev-next">
+                                <span class="btn-prev">
+                                    <i class="fas fa-angle-double-left" onclick="PrevImage()">
+                                </span></i>
+                                <span class="btn-next">
+                                    <i class="fas fa-angle-double-right"
+                                       onclick="NextImage()"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-carousel">
+                            <div class="wrapper-outter">
+                                <div class="wrapper-1"
+                                     style="width: 5616px;display: block;left: 0px;transition: 0.5s;transform: translate3d(0px, 0px, 0px);">
+                                    @{ int productIndex = 0; }
+                                    @foreach (DatabaseProvider.EntityFramework.SanPham item in Model.list_SanPham)
+                                    {
+                                        <div class="wrapper-item">
+                                            <div class="product-list-item">
+                                                <div class="product-item">
+                                                    <div class="product-wrap">
+                                                        <div class="product-image">
+                                                            <a>
+                                                                <img src="@item.Hinh"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-decs">
+                                                            <div class="product-variant-box">
+
+                                                                <p class="variant-text">
+                                                                    + @item.ID_SoSize Size
+                                                                </p>
+                                                                <div class="size-box">
+                                                                    @foreach (DatabaseProvider.EntityFramework.Size size in Model.list_Size[productIndex++])
+                                                                    {
+                                                                        <span class="size-item">@size.value1</span>
+                                                                        <span class="size-item">@size.value2</span>
+                                                                        <span class="size-item">@size.value3</span>
+                                                                        <span class="size-item">@size.value4</span>
+                                                                        <span class="size-item">@size.value5</span>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="product-name">
+                                                                <a>@item.TenSanPham @item.ID_SanPham</a>
+                                                            </h3>
+                                                            <div class="group-name">
+                                                                <div class="name-item">
+                                                                    <a>@item.ID_loaiSanPham</a>
+                                                                </div>
+                                                                <div></div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span class="price">@item.GiaTien đ</span>
+                                                            </div>
+                                                            <div class="product-action">
+                                                                <button>Mua Hàng</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    <script>
+                                        const s = document.querySelector('.wrapper-1');
+                                        let a = 0;
+                                        function NextImage() {
+                                            if (a == -1638) {
+                                                s.style.transform = `translate3d(0px, 0px, 0px)`;
+                                                a = 0;
+                                            }
+                                            else
+                                                s.style.transform = `translate3d(${a += -234}px, 0px, 0px)`;
+                                        }
+                                        function PrevImage() {
+                                            if (a == 0) {
+                                                s.style.transform = `translate3d(-1638px, 0px, 0px)`;
+                                                a = -1638;
+                                            }
+                                            else {
+                                                s.style.transform = `translate3d(${a += 234}px, 0px, 0px)`;
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-text">
+                    <a href="#">XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- --NU-- -->
+<section class="home-cate-box">
+    <div class="container">
+        <div class="row-2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-title">
+                    <div class="home-cate-box-title">
+                        <h2 class="title">NỮ</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row-2">
+                    <div class="home-cate-box-content">
+                        <div class="arrow-product-slider">
+                            <div class="btn-prev-next">
+                                <span class="btn-prev">
+                                    <i class="fas fa-angle-double-left" onclick="PrevImage_2()">
+                                </span></i>
+                                <span class="btn-next">
+                                    <i class="fas fa-angle-double-right"
+                                       onclick="NextImage_2()"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-carousel">
+                            <div class="wrapper-outter">
+                                <div class="wrapper-2"
+                                     style="width: 5616px;display: block;left: 0px;transition: 0.5s;transform: translate3d(0px, 0px, 0px);">
+                                 @{ int productIndexNU = 0; }
+                                    @foreach (DatabaseProvider.EntityFramework.SanPham sanpham in Model.ListSanPhamNu)
+                                    {
+
+
+                                        <div class="wrapper-item">
+                                            <div class="product-list-item">
+                                                <div class="product-item">
+                                                    <div class="product-wrap">
+                                                        <div class="product-image">
+                                                            <a>
+                                                                <img src="@sanpham.Hinh"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-decs">
+                                                            <div class="product-variant-box">
+
+                                                                <p class="variant-text">
+                                                                    + @sanpham.ID_SoSize Size
+                                                                </p>
+                                                                <div class="size-box">
+                                                                    @foreach (DatabaseProvider.EntityFramework.Size sizeNu in Model.listSizeNu[productIndexNU++])
+                                                                    {
+                                                                        <span class="size-item">@sizeNu.value1</span>
+                                                                        <span class="size-item">@sizeNu.value2</span>
+                                                                        <span class="size-item">@sizeNu.value3</span>
+                                                                        <span class="size-item">@sizeNu.value4</span>
+                                                                        <span class="size-item">@sizeNu.value5</span>
+
+                                                                    }
+
+
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="product-name">
+                                                                <a>Giày thể thao nam Biti's Hunter</a>
+                                                            </h3>
+                                                            <div class="group-name">
+                                                                <div class="name-item">
+                                                                    <a>@sanpham.ID_loaiSanPham</a>
+                                                                </div>
+                                                                <div></div>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <span class="price">@sanpham.GiaTien đ</span>
+                                                            </div>
+                                                            <div class="product-action">
+                                                                <button>Mua Hàng</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    <script>
+                                        const s_2 = document.querySelector('.wrapper-2');
+                                        let a2 = 0;
+                                        function NextImage_2() {
+                                            if (a2 == -1638) {
+                                                s_2.style.transform = `translate3d(0px, 0px, 0px)`;
+                                                a2 = 0;
+                                            }
+                                            else
+                                                s_2.style.transform = `translate3d(${a2 += -234}px, 0px, 0px)`;
+                                        }
+                                        function PrevImage_2() {
+                                            if (a2 == 0) {
+                                                s_2.style.transform = `translate3d(-1638px, 0px, 0px)`;
+                                                a2 = -1638;
+                                            }
+                                            else {
+                                                s_2.style.transform = `translate3d(${a2 += 234}px, 0px, 0px)`;
+                                            }
+
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+                                   
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-text">
+                    <a href="#">XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- --GOSTO-- -->
+<section class="home-cate-box">
+    <div class="container">
+        <div class="row-2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-title">
+                    <div class="home-cate-box-title">
+                        <img src="~/image/images/GOSTO.png" alt=""
+                             style="width: auto; height: auto; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row-2">
+                    <div class="home-cate-box-content">
+                        <div class="arrow-product-slider">
+                            <div class="btn-prev-next">
+                                <span class="btn-prev">
+                                    <i class="fas fa-angle-double-left" onclick="PrevImage_3()">
+                                </span></i>
+                                <span class="btn-next">
+                                    <i class="fas fa-angle-double-right"
+                                       onclick="NextImage_3()"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-carousel">
+                            <div class="wrapper-outter">
+                                <div class="wrapper-3"
+                                    style="width: 5616px;display: block;left: 0px;transition: 0.5s;transform: translate3d(0px, 0px, 0px);">
+                                    @{ int productIndexGosto = 0;}
+                                    @foreach(DatabaseProvider.EntityFramework.SanPham sanphamgosto in Model.ListSanPhamGosto)
+                                    {
+                                    <div class="wrapper-item">
+                                        <div class="product-list-item">
+                                            <div class="product-item">
+                                                <div class="product-wrap">
+                                                    <div class="product-image">
+                                                        <a>
+                                                            <img src="
+                                                                 @sanphamgosto.Hinh"
+                                                                 alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-decs">
+                                                        <div class="product-variant-box">
+
+                                                            <p class="variant-text">
+                                                                + @sanphamgosto.ID_SoSize Size
+                                                            </p>
+                                                            <div class="size-box">
+                                                                @foreach (DatabaseProvider.EntityFramework.Size sizegosto in Model.listSizeGosto[productIndexGosto++])
+                                                                {
+                                                                    <span class="size-item">@sizegosto.value1</span>
+                                                                    <span class="size-item">@sizegosto.value2</span>
+                                                                    <span class="size-item">@sizegosto.value3</span>
+                                                                    <span class="size-item">@sizegosto.value4</span>
+                                                                    <span class="size-item">@sizegosto.value5</span>
+                                                                }
+
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="product-name">
+                                                            <a>@sanphamgosto.TenSanPham</a>
+                                                        </h3>
+                                                        <div class="group-name">
+                                                            <div class="name-item">
+                                                                <a>@sanphamgosto.ID_loaiSanPham</a>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <span class="price">@sanphamgosto.GiaTien đ</span>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <button>Mua Hàng</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                                    <script>
+                                        const s_3 = document.querySelector('.wrapper-3');
+                                        let a3 = 0;
+                                        function NextImage_3() {
+                                            if (a3 == -1638) {
+                                                s_3.style.transform = `translate3d(0px, 0px, 0px)`;
+                                                a3 = 0;
+                                            }
+                                            else
+                                                s_3.style.transform = `translate3d(${a3 += -234}px, 0px, 0px)`;
+                                        }
+                                        function PrevImage_3() {
+                                            if (a3 == 0) {
+                                                s_3.style.transform = `translate3d(-1638px, 0px, 0px)`;
+                                                a3 = -1638;
+                                            }
+                                            else {
+                                                s_3.style.transform = `translate3d(${a3 += 234}px, 0px, 0px)`;
+                                            }
+
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-text">
+                    <a href="#">XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- --PHU KIEN-- -->
+<section class="home-cate-box">
+    <div class="container">
+        <div class="row-2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-title">
+                    <div class="home-cate-box-title">
+                        <h2 class="title">PHỤ KIỆN</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row-2">
+                    <div class="home-cate-box-content">
+                        <div class="arrow-product-slider">
+                            <div class="btn-prev-next">
+                                <span class="btn-prev">
+                                    <i class="fas fa-angle-double-left" onclick="PrevImage_4()">
+                                </span></i>
+                                <span class="btn-next">
+                                    <i class="fas fa-angle-double-right"
+                                       onclick="NextImage_4()"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-carousel">
+                            <div class="wrapper-outter">
+                                <div class="wrapper-4"
+                                     style="width: 5616px;display: block;left: 0px;transition: 0.5s;transform: translate3d(0px, 0px, 0px);">
+                                    @{ int productIndexPhuKien = 0;}
+                                    @foreach(DatabaseProvider.EntityFramework.SanPham sanphamphukien in Model.ListSanPhamPhuKien)
+                                    {
+
+
+                                    <div class="wrapper-item">
+                                        <div class="product-list-item">
+                                            <div class="product-item">
+                                                <div class="product-wrap">
+                                                    <div class="product-image">
+                                                        <a>
+                                                            <img src="@sanphamphukien.Hinh"
+                                                                 alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-decs">
+                                                        <div class="product-variant-box">
+
+                                                            <p class="variant-text">
+                                                                + @sanphamphukien.ID_SoSize Size
+                                                            </p>
+                                                            <div class="size-box">
+                                                                @foreach (DatabaseProvider.EntityFramework.Size sizephukien in Model.listSizePhuKien[productIndexPhuKien++])
+                                                                {
+                                                                    <span class="size-item">@sizephukien.value1</span>
+                                                                    <span class="size-item">@sizephukien.value2</span>
+                                                                    <span class="size-item">@sizephukien.value3</span>
+                                                                    <span class="size-item">@sizephukien.value4</span>
+                                                                    <span class="size-item">@sizephukien.value5</span>
+
+                                                                }
+
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="product-name">
+                                                            <a>@sanphamphukien.TenSanPham</a>
+                                                        </h3>
+                                                        <div class="group-name">
+                                                            <div class="name-item">
+                                                                <a>@sanphamphukien.ID_loaiSanPham</a>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <span class="price">@sanphamphukien.GiaTien đ</span>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <button>Mua Hàng</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                                   
+                                    <script>
+                                        const s_4 = document.querySelector('.wrapper-4');
+                                        let a4 = 0;
+                                        function NextImage_4() {
+                                            if (a4 == -1638) {
+                                                s_4.style.transform = `translate3d(0px, 0px, 0px)`;
+                                                a4 = 0;
+                                            }
+                                            else
+                                                s_4.style.transform = `translate3d(${a4 += -234}px, 0px, 0px)`;
+                                        }
+                                        function PrevImage_4() {
+                                            if (a4 == 0) {
+                                                s_4.style.transform = `translate3d(-1638px, 0px, 0px)`;
+                                                a4 = -1638;
+                                            }
+                                            else {
+                                                s_4.style.transform = `translate3d(${a4 += 234}px, 0px, 0px)`;
+                                            }
+
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-text">
+                    <a href="#">XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-cate-banner">
+    <div class="container">
+        <div class="row-2">
+            <img src="~/image/images/BETrai.jpg" alt="">
+        </div>
+    </div>
+</section>
+<!-- --BE TRAI-- -->
+<section class="home-cate-box">
+    <div class="container">
+        <div class="row-2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-title">
+                    <div class="home-cate-box-title">
+                        <h2 class="title">BÉ TRAI</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row-2">
+                    <div class="home-cate-box-content">
+                        <div class="arrow-product-slider">
+                            <div class="btn-prev-next">
+                                <span class="btn-prev">
+                                    <i class="fas fa-angle-double-left" onclick="PrevImage_5()">
+                                </span></i>
+                                <span class="btn-next">
+                                    <i class="fas fa-angle-double-right"
+                                       onclick="NextImage_5()"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-carousel">
+                            <div class="wrapper-outter">
+                                <div class="wrapper-5"
+                                     style="width: 5616px;display: block;left: 0px;transition: 0.5s;transform: translate3d(0px, 0px, 0px);">
+                                    @{int productIndexBeTrai = 0;  }
+                                    @foreach(DatabaseProvider.EntityFramework.SanPham sanphambetrai in Model.ListSanPhamBeTrai)
+                                    { 
+                                    <div class="wrapper-item">
+                                        <div class="product-list-item">
+                                            <div class="product-item">
+                                                <div class="product-wrap">
+                                                    <div class="product-image">
+                                                        <a>
+                                                            <img src="@sanphambetrai.Hinh"
+                                                                 alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-decs">
+                                                        <div class="product-variant-box">
+                                                            <p class="variant-text">
+                                                                + @sanphambetrai.ID_SoSize Size
+                                                            </p>
+                                                            <div class="size-box">
+                                                                @foreach (DatabaseProvider.EntityFramework.Size sizebetrai in Model.listSizeBeTrai[productIndexBeTrai++])
+                                                                {
+                                                                    <span class="size-item">@sizebetrai.value1</span>
+                                                                    <span class="size-item">@sizebetrai.value2</span>
+                                                                    <span class="size-item">@sizebetrai.value3</span>
+                                                                    <span class="size-item">@sizebetrai.value4</span>
+                                                                    <span class="size-item">@sizebetrai.value5</span>
+
+                                                                }
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="product-name">
+                                                            <a>@sanphambetrai.TenSanPham</a>
+                                                        </h3>
+                                                        <div class="group-name">
+                                                            <div class="name-item">
+                                                                <a>@sanphambetrai.LoaiSanPham</a>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <span class="price">@sanphambetrai.GiaTien đ</span>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <button>Mua Hàng</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                                    <script>
+                                        const s_5 = document.querySelector('.wrapper-5');
+                                        let a5 = 0;
+                                        function NextImage_5() {
+                                            if (a5 == -1638) {
+                                                s_5.style.transform = `translate3d(0px, 0px, 0px)`;
+                                                a5 = 0;
+                                            }
+                                            else
+                                                s_5.style.transform = `translate3d(${a5 += -234}px, 0px, 0px)`;
+                                        }
+                                        function PrevImage_5() {
+                                            if (a5 == 0) {
+                                                s_5.style.transform = `translate3d(-1638px, 0px, 0px)`;
+                                                a5 = -1638;
+                                            }
+                                            else {
+                                                s_5.style.transform = `translate3d(${a5 += 234}px, 0px, 0px)`;
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-text">
+                    <a href="#">XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-cate-banner">
+    <div class="container">
+        <div class="row-2">
+            <img src="~/image/images/BEGai.jpg" alt="">
+        </div>
+    </div>
+</section>
+<!-- --BE GAI-- -->
+<section class="home-cate-box">
+    <div class="container">
+        <div class="row-2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-title">
+                    <div class="home-cate-box-title">
+                        <h2 class="title">BÉ GÁI</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row-2">
+                    <div class="home-cate-box-content">
+                        <div class="arrow-product-slider">
+                            <div class="btn-prev-next">
+                                <span class="btn-prev">
+                                    <i class="fas fa-angle-double-left" onclick="PrevImage_6()">
+                                </span></i>
+                                <span class="btn-next">
+                                    <i class="fas fa-angle-double-right"
+                                       onclick="NextImage_6()"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-carousel">
+                            <div class="wrapper-outter">
+                                <div class="wrapper-6"
+                                     style="width: 5616px;display: block;left: 0px;transition: 0.5s;transform: translate3d(0px, 0px, 0px);">
+                                    @{ int productIndexBeGai = 0; }
+                                    @foreach(DatabaseProvider.EntityFramework.SanPham sanphambegai in Model.ListSanPhamBeGai)
+                                    {
+
+                                    
+                                    <div class="wrapper-item">
+                                        <div class="product-list-item">
+                                            <div class="product-item">
+                                                <div class="product-wrap">
+                                                    <div class="product-image">
+                                                        <a>
+                                                            <img src="@sanphambegai.Hinh"
+                                                                 alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-decs">
+                                                        <div class="product-variant-box">
+
+                                                            <p class="variant-text">
+                                                                + @sanphambegai.ID_SoSize Size
+                                                            </p>
+                                                            <div class="size-box">
+                                                                @foreach (DatabaseProvider.EntityFramework.Size sizebegai in Model.listSizeBeGai[productIndexBeGai++])
+                                                                {
+                                                                    <span class="size-item">@sizebegai.value1</span>
+                                                                    <span class="size-item">@sizebegai.value2</span>
+                                                                    <span class="size-item">@sizebegai.value3</span>
+                                                                    <span class="size-item">@sizebegai.value4</span>
+                                                                    <span class="size-item">@sizebegai.value5</span>
+                                                                }
+
+
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="product-name">
+                                                            <a>@sanphambegai.TenSanPham</a>
+                                                        </h3>
+                                                        <div class="group-name">
+                                                            <div class="name-item">
+                                                                <a>@sanphambegai.ID_loaiSanPham</a>
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <span class="price">@sanphambegai.GiaTien đ</span>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <button>Mua Hàng</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                                    <script>
+                                        const s_6 = document.querySelector('.wrapper-6');
+                                        let a6 = 0;
+                                        function NextImage_6() {
+                                            if (a6 == -1638) {
+                                                s_6.style.transform = `translate3d(0px, 0px, 0px)`;
+                                                a6 = 0;
+                                            }
+                                            else
+                                                s_6.style.transform = `translate3d(${a6 += -234}px, 0px, 0px)`;
+                                        }
+                                        function PrevImage_6() {
+                                            if (a6 == 0) {
+                                                s_6.style.transform = `translate3d(-1638px, 0px, 0px)`;
+                                                a6 = -1638;
+                                            }
+                                            else {
+                                                s_6.style.transform = `translate3d(${a6 += 234}px, 0px, 0px)`;
+                                            }
+
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="home-cate-text">
+                    <a href="#">XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

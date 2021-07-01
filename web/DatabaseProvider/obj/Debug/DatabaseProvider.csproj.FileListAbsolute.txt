@@ -1,0 +1,12 @@
+D:\web\DatabaseProvider\bin\Debug\DatabaseProvider.dll.config
+D:\web\DatabaseProvider\bin\Debug\DatabaseProvider.dll
+D:\web\DatabaseProvider\bin\Debug\DatabaseProvider.pdb
+D:\web\DatabaseProvider\bin\Debug\EntityFramework.dll
+D:\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer.dll
+D:\web\DatabaseProvider\bin\Debug\EntityFramework.xml
+D:\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer.xml
+D:\web\DatabaseProvider\obj\Debug\DatabaseProvider.csprojAssemblyReference.cache
+D:\web\DatabaseProvider\obj\Debug\DatabaseProvider.csproj.CoreCompileInputs.cache
+D:\web\DatabaseProvider\obj\Debug\DatabaseProvider.csproj.CopyComplete
+D:\web\DatabaseProvider\obj\Debug\DatabaseProvider.dll
+D:\web\DatabaseProvider\obj\Debug\DatabaseProvider.pdb
