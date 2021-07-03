@@ -53,6 +53,12 @@
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -128,6 +134,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductBeGaiController.cs" />
+    <Compile Include="Controllers\ProductBeTraiController.cs" />
+    <Compile Include="Controllers\ProductFemaleController.cs" />
+    <Compile Include="Controllers\ProductGostoController.cs" />
+    <Compile Include="Controllers\ProductMaleController.cs" />
+    <Compile Include="Controllers\ProductPhuKienController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -136,6 +148,8 @@
   <ItemGroup>
     <Content Include="Content\Home.css" />
     <Content Include="Content\index.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\ProductIndex.css" />
     <Content Include="Global.asax" />
     <Content Include="image\baner-cate\banner-cate-1_76bca9574e71406cb7536394202d76ad_master.jpg" />
     <Content Include="image\baner-cate\banner-cate-2_d5cc77ab5fa34ae5bea38ff9413ad60f_master.jpg" />
@@ -159,7 +173,10 @@
     <Content Include="image\Hunter-Nam\01_e07b5f71bd82468da19d879d25014315_medium.jpg" />
     <Content Include="image\Hunter-Nam\02_fb96605aaf6941a19ca8a037ad2c769a_medium.jpg" />
     <Content Include="image\Hunter-Nam\03_9eb0ee34c5f34c25b1a22a3a007e0339_medium.jpg" />
+    <Content Include="image\Hunter-Nam\dsmh03500trg__6__d26559701138471888855c5a80a86ce1_1024x1024.jpg" />
     <Content Include="image\Hunter-Nam\dsmh0400den-2_f9306264a1bf467fba65764b6fdb3ece_medium.jpg" />
+    <Content Include="image\Hunter-Nam\dsmh04200den__3__483c6547abee43c2acac5850822072f0_1024x1024.jpg" />
+    <Content Include="image\Hunter-Nam\dsmh04200trg__3__23b5f7d04eae4a458202de31bf4e094a_1024x1024.jpg" />
     <Content Include="image\Hunter-Nam\dsmh05000xam__7__1eef9705616447ed9de490c30692d10a_medium.jpg" />
     <Content Include="image\Hunter-Nam\dsmh0500xdg-2_1e5fbe11780b4564b4959fe8750cc113_medium.jpg" />
     <Content Include="image\Hunter-Nam\dsmh05100reu-2_2e3534c18d1d45968c3a41f9055db2e3_medium.jpg" />
@@ -180,6 +197,7 @@
     <Content Include="image\Hunter-Nu\dswh0500xam-2_a17385c00d8c44b1aa718dedae3acfb2_1024x1024.jpg" />
     <Content Include="image\Hunter-Nu\dswh05100reu-2_28ca85e01d9f42a9b89d66b7d0cff89a_1024x1024.jpg" />
     <Content Include="image\Hunter-Nu\dswh05100tim-2_739795810a0f40d08faeb7aa75bb855e_1024x1024.jpg" />
+    <Content Include="image\images\banner-BeTrai.jpg" />
     <Content Include="image\images\BEGai.jpg" />
     <Content Include="image\images\BETrai.jpg" />
     <Content Include="image\images\bia 11.jpg" />
@@ -297,11 +315,18 @@
     <Content Include="image\Phu-Kien\ahuh00300trg__3__3988f87ca24d4588b3531392ff2df45e_1024x1024.jpg" />
     <Content Include="image\Phu-Kien\dsc_0119_9d0e21ac345543b6b0772227862e0ca0_1024x1024.jpg" />
     <Content Include="image\Phu-Kien\dsc_0298_7f0e4e8ec0cf493ba67b4a36c2320f33_1024x1024.jpg" />
+    <Content Include="libman.json" />
     <None Include="packages.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
+    <Content Include="Views\ProductMale\ProductMaleIndex.cshtml" />
+    <Content Include="Views\ProductFemale\ProductFemaleIndex.cshtml" />
+    <Content Include="Views\ProductGosto\ProductGostoIndex.cshtml" />
+    <Content Include="Views\ProductBeTrai\ProductBeTraiIndex.cshtml" />
+    <Content Include="Views\ProductBeGai\ProductBeGaiIndex.cshtml" />
+    <Content Include="Views\ProductPhuKien\ProductPhuKienIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DatabaseIO\DatabaseIO.csproj">

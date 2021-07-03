@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css">
     <link rel="stylesheet" href="~/Content/index.css">
     <link rel="stylesheet" href="~/Content/Home.css">
+    <link rel="stylesheet" href="~/Content/ProductIndex.css">
+    <link rel="stylesheet" href="~/Content/PagedList.css">
     <script src="~/lib/font-awesome/js/all.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <title>Document</title>
@@ -66,25 +68,25 @@
                         <div class=" header-bottom-menu">
                             <ul id="main-menu" class="clearfix">
                                 <li class="has-child">
-                                    <a href="~/Views/Home/Index.cshtml">HOME</a>
+                                    <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })">HOME</a>
                                 </li>
                                 <li class="has-child">
-                                    <a href="#">NAM</a>
+                                    <a href="@Url.Action("ProductMaleIndex", "ProductMale", new { id = UrlParameter.Optional })">NAM</a>
                                 </li>
                                 <li class="has-child">
-                                    <a href="#">NỮ</a>
+                                    <a href="@Url.Action("ProductFemaleIndex", "ProductFemale", new { id = UrlParameter.Optional })">NỮ</a>
                                 </li>
                                 <li class="has-child">
-                                    <a href="#">GOSTO</a>
+                                    <a href="@Url.Action("ProductGostoIndex", "ProductGosto", new { id = UrlParameter.Optional })">GOSTO</a>
                                 </li>
                                 <li class="has-child">
-                                    <a href="#">BÉ TRAI</a>
+                                    <a href="@Url.Action("ProductBeTraiIndex", "ProductBeTrai", new { id = UrlParameter.Optional })">BÉ TRAI</a>
                                 </li>
                                 <li class="has-child">
-                                    <a href="#">BÉ GÁI</a>
+                                    <a href="@Url.Action("ProductBeGaiIndex", "ProductBeGai", new { id = UrlParameter.Optional })">BÉ GÁI</a>
                                 </li>
                                 <li class="has-child">
-                                    <a href="#">PHỤ KIỆN</a>
+                                    <a href="@Url.Action("ProductPhuKienIndex", "ProductPhuKien", new { id = UrlParameter.Optional })">PHỤ KIỆN</a>
                                 </li>
                             </ul>
                         </div>
@@ -168,47 +170,9 @@
                     </div>
                 </div>
             </div>
-            <section id="banner-cate">
-                <div class="container">
-                    <div class="row-2">
-                        <div class="banner-cate-hasd-child">
-                            <a href="#"><img src="../image/baner-cate/banner-cate-1_76bca9574e71406cb7536394202d76ad_master.jpg"></a>
-                        </div>
-                        <div class="banner-cate-hasd-child">
-                            <a href="#">
-                                <img src="../image/baner-cate/banner-cate-2_d5cc77ab5fa34ae5bea38ff9413ad60f_master.jpg">
-                            </a>
-                        </div>
-                        <div class="banner-cate-hasd-child">
-                            <a href="#">
-                                <img src="../image/baner-cate/banner-cate-3_06b272263c19450b9705f942567fc05c_master.jpg">
-                            </a>
-                        </div>
-                        <div class="banner-cate-hasd-child">
-                            <a href="#">
-                                <img src="../image/baner-cate/banner-cate-5_513967e8e2f54fec9d5d88ecde42f23c_master.jpg">
-                            </a>
-                        </div>
-                        <div class="banner-cate-hasd-child">
-                            <a href="#">
-                                <img src="../image/baner-cate/banner-cate-6_2700ab7c2d1649078d83f11f48115883_master.jpg">
-                            </a>
-                        </div>
-                        <div class="banner-cate-hasd-child">
-                            <a href="#">
-                                <img src="../image/baner-cate/banner-cate-7_01a820ce4bbf4faa9c51db18bda5634c_master.jpg">
-                            </a>
-                        </div>
-                        <div class="banner-cate-hasd-child">
-                            <a href="#">
-                                <img src="../image/baner-cate/untitled-1-1_04edd88faa7c4c38912c668ba987728e_master.jpg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
             @RenderBody()
-            </section>
+            
 
 
         </main>

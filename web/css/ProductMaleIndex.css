@@ -1,0 +1,43 @@
+
+.text-center{
+    text-align: center;
+}
+.text-center .page-text-center{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #000;
+    display: inline-block;
+}
+.menu-collection{
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px;
+}
+.menu-collection li{
+    display: inline-block;
+    width: 76.04px;
+    height: 40px;
+    font-size: 18px;
+    
+}
+.sidebar-collection{
+    padding: 30px 24px;
+    width: 260px;
+    z-index: 98;
+    font-size: 13px;
+    -webkit-tap-highlight-color: transparent;
+    float: left;
+    display: inline-block;   
+}
+.center-column{
+    width: calc(100% - 260px);
+    margin-bottom: 50px;
+    display: inline-block;
+    float: right;
+}
+.product-lists-item{
+    width: 1000px;
+}

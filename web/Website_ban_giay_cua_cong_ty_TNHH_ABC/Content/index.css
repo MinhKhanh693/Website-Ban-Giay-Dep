@@ -573,6 +573,9 @@ footer {
 .footer-hashtag-title {
     background: #212121;
 }
+    .footer-hashtag-title a{
+        color :blue;
+    }
 
     .footer-hashtag-title h2 {
         padding: 16px 15px;
@@ -581,10 +584,6 @@ footer {
         font-weight: normal;
         text-transform: uppercase;
         color: white;
-    }
-
-    .footer-hashtag-title a {
-        text-decoration: none;
     }
 
 .footer-hashtag-images {

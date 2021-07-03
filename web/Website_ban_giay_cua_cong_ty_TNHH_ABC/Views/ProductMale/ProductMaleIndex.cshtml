@@ -1,0 +1,174 @@
+﻿
+
+@model dynamic
+
+@*@model PagedList.IPagedList<DatabaseProvider.EntityFramework.SanPham>*@
+@using PagedList;
+@using PagedList.Mvc;
+
+
+@{
+    ViewBag.Title = "Product Nam";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@section slider{
+    <div id="wrapper-item">
+
+        <div>
+            <a>
+                <img src="~/image/images/page-TrangChu-4.jpg"
+                     alt="">
+            </a>
+        </div>
+    </div>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <H1 class="page-text-center">Hunter Nam</H1>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <ul class="menu-collection">
+                <li>
+                    <a href="#">Hunter </a>
+                </li>
+                <li>
+                    <a href="#">Sandal</a>
+                </li>
+                <li>
+                    <a href="#">Giày Thể Thao</a>
+                </li>
+                <li>
+                    <a href="#">Giày Chạy Bộ</a>
+                </li>
+                <li>
+                    <a href="#">Giày Đá banh</a>
+                </li>
+                <li>
+                    <a href="#">Giày Tây</a>
+                </li>
+                <li>
+                    <a href="#">Dép</a>
+                </li>
+            </ul>
+        </div>
+        <aside class="sidebar-collection">
+
+            <div id="left_column" class="left_column sidebar">
+                <div class="catalog_filter_wrap">
+                    <div data-filter-control class="sortby-wrapper">
+                        <select name="SortBy" class="sort-by" id="SortBy">
+                            <option value="manual">Sắp xếp:</option>
+                            <option value="price-ascending" data-filter="(price:product=asc)">Giá: Tăng dần</option>
+                            <option value="price-descending" data-filter="(price:product=desc)">Giá: Giảm dần</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="catalog_filters">
+                <div class="catalog_subtitle_heading">
+                    <span class="catalog_subtitle">Size: </span>
+                </div>
+            </div>
+            <ul id="ul_catalog_size" class=" clearfix">
+
+                <li class="advanced-filter" data-text="24">
+                    <label>
+                        <span data-value="(variantonhand:product**24)">39</span>
+                    </label>
+                </li>
+                <li class="advanced-filter" data-text="24">
+                    <label>
+                        <span data-value="(variantonhand:product**24)">40</span>
+                    </label>
+                </li>
+                <li class="advanced-filter" data-text="24">
+                    <label>
+                        <span data-value="(variantonhand:product**24)">41</span>
+                    </label>
+                </li>
+                <li class="advanced-filter" data-text="24">
+                    <label>
+                        <span data-value="(variantonhand:product**24)">42</span>
+                    </label>
+                </li>
+                <li class="advanced-filter" data-text="24">
+                    <label>
+                        <span data-value="(variantonhand:product**24)">43</span>
+                    </label>
+                </li>
+            </ul>
+        </aside>
+        <div class="center-column">
+            <div class="mask-product-list clearfix">
+                <div id="product_list" class="clearfix content-product-list product-lists">
+                    @{int productIndex = 0; }
+                    @foreach (var sanpham in Model.page)
+                    {
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-6 product-lists-item"
+                             id="@sanpham.ID_SanPham">
+                            <div class="product-list">
+                                <div class="wrapper-item">
+                                    <div class="product-list-item">
+                                        <div class="product-item">
+                                            <div class="product-wrap">
+                                                <div class="product-image">
+                                                    <a>
+                                                        <img src="@sanpham.Hinh"
+                                                             alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-decs">
+                                                    <div class="product-variant-box">
+
+                                                        <p class="variant-text">
+                                                            + @sanpham.ID_SoSize Size
+                                                        </p>
+                                                        <div class="size-box">
+                                                            @foreach (DatabaseProvider.EntityFramework.Size size in Model.list_Size[productIndex++])
+                                                            {
+                                                                <span class="size-item">@size.value1</span>
+                                                                <span class="size-item">@size.value2</span>
+                                                                <span class="size-item">@size.value3</span>
+                                                                <span class="size-item">@size.value4</span>
+                                                                <span class="size-item">@size.value5</span>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="product-name">
+                                                        <a>@sanpham.TenSanPham</a>
+                                                    </h3>
+                                                    <div class="group-name">
+                                                        <div class="name-item">
+                                                            <a>@sanpham.LoaiSanPham</a>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">@sanpham.GiaTien đ</span>
+                                                    </div>
+                                                    <div class="product-action">
+                                                        <button>Mua Hàng</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                </div>
+                <br />
+                @*Tạo Trang page*@
+                Trang @(Model.page.PageCount < Model.page.PageNumber ? 0 : Model.page.PageNumber) / @Model.page.PageCount
+                @Html.PagedListPager((IPagedList)Model.page, page => Url.Action("ProductMaleIndex", new { page }))
+            </div>
+        </div>
+    </div>
+</div>
