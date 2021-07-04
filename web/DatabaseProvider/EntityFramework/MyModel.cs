@@ -21,7 +21,6 @@ namespace DatabaseProvider.EntityFramework
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<ThongTinKhachHang> ThongTinKhachHangs { get; set; }
         public virtual DbSet<YeuThich> YeuThiches { get; set; }
-        public object SanPham { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -46,15 +45,11 @@ namespace DatabaseProvider.EntityFramework
                 .IsUnicode(false);
 
             modelBuilder.Entity<ThongTinKhachHang>()
-                .Property(e => e.username)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ThongTinKhachHang>()
                 .Property(e => e.password)
                 .IsUnicode(false);
 
             modelBuilder.Entity<ThongTinKhachHang>()
-                .Property(e => e.ermail)
+                .Property(e => e.email)
                 .IsUnicode(false);
 
             modelBuilder.Entity<ThongTinKhachHang>()

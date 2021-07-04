@@ -133,13 +133,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Code\CustomMembershipProvider.cs" />
+    <Compile Include="Code\SessionHelper.cs" />
+    <Compile Include="Code\UserSession.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductBeGaiController.cs" />
     <Compile Include="Controllers\ProductBeTraiController.cs" />
     <Compile Include="Controllers\ProductFemaleController.cs" />
     <Compile Include="Controllers\ProductGostoController.cs" />
     <Compile Include="Controllers\ProductMaleController.cs" />
     <Compile Include="Controllers\ProductPhuKienController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,6 +153,7 @@
   <ItemGroup>
     <Content Include="Content\Home.css" />
     <Content Include="Content\index.css" />
+    <Content Include="Content\login.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\ProductIndex.css" />
     <Content Include="Global.asax" />
@@ -327,6 +333,9 @@
     <Content Include="Views\ProductBeTrai\ProductBeTraiIndex.cshtml" />
     <Content Include="Views\ProductBeGai\ProductBeGaiIndex.cshtml" />
     <Content Include="Views\ProductPhuKien\ProductPhuKienIndex.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Register\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DatabaseIO\DatabaseIO.csproj">

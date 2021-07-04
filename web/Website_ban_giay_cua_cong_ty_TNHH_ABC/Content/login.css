@@ -1,0 +1,103 @@
+.layout-account{
+    margin-bottom: 50px;
+}
+.breadcrum{
+    background: #efefef;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.breadcrum-title{
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #0076fd, #ffae00);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#login{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    margin: 20px auto 0px;
+    max-width: 100%;
+    width: 335px;
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+
+}
+#login h1{
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+   
+}
+
+.form-field{
+    position: relative;
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;   
+}
+.form-input{
+    border: 1px solid #eee; 
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    transition: 0.25s ease;
+}
+.form-input:focus{
+    border-color: #b328d6;
+    color: #b328d6;
+    
+}
+.form-label{
+    position: absolute;
+    top: 50%;
+    left: 21px;    
+    user-select: none;
+    color: #999;
+    pointer-events: none;
+    transition: 0.25s ease;
+    transform: translateY(-50%);
+    
+}
+.form-input:not(:placeholder-shown) +  .form-label,
+.form-input:focus + .form-label{
+    top: 0px;
+    left: 11px;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: white;
+    color: #b328d6;
+}
+.button-login{
+    margin-bottom: 15px;
+}
+.button-login input{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 35px;
+    background: #034ea1;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    transition: 0.5s ease;
+}
+.button-login input:hover{
+    background-color: red;
+    color: white;
+}
+.req-pass{
+    text-align: center;
+}
+.req-pass a{
+    color: #000;
+    font-size: 16px;
+}
+

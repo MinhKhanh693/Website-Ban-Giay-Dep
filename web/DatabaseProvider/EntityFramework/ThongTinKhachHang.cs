@@ -22,15 +22,11 @@ namespace DatabaseProvider.EntityFramework
 
         [Required]
         [StringLength(45)]
-        public string username { get; set; }
-
-        [Required]
-        [StringLength(45)]
         public string password { get; set; }
 
         [Required]
         [StringLength(80)]
-        public string ermail { get; set; }
+        public string email { get; set; }
 
         [StringLength(45)]
         public string firstName { get; set; }

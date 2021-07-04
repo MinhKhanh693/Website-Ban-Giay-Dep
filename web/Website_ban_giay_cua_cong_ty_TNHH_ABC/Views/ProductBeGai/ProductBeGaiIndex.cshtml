@@ -155,7 +155,7 @@
                 <br />
                 Trang @(Model.page.PageCount < Model.page.PageNumber ? 0 : Model.page.PageNumber) / @Model.page.PageCount
 
-                @Html.PagedListPager((IPagedList)Model.page, page => Url.Action("ProductMaleIndex", new { page }))
+                @Html.PagedListPager((IPagedList)Model.page, page => Url.Action("ProductBeGaiIndex", new { page }))
             </div>
         </div>
     </div>

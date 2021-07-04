@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -106,12 +105,12 @@
                         <div class="header-bottom-cart">
                             <div class="menu-cart">
                                 <div class="cart-child">
-                                    <a href="#" >
+                                    <a href="#">
                                         <i class="far fa-heart"></i>
                                     </a>
                                 </div>
                                 <div class="cart-child">
-                                    <a href="#" >
+                                    <a href="#">
                                         <span id="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                                         <span id="cart-count">0</span>
                                     </a>
@@ -122,62 +121,7 @@
                 </div>
             </div>
         </header>
-        <main clas="main-content">
-            <section id="slider">
-                <div class="slider-wrapper-outter">
-                    <div class="wrapper">
-
-                        @RenderSection("slider", required: true);
-
-                    </div>
-
-                </div>
-
-            </section>
-            <div class="announcement">
-                <div class="container">
-                    <div class="row-2">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="annuouncement-slider">
-                                <div class="owl-wrapper-outter">
-                                    <div class="owl-wrapper">
-                                        <div class="owl-item">
-                                            <div class="annuouncement-item">
-                                                <img src="~/image/images/icon_announcemen_2.png"
-                                                     alt="">
-                                                <span class="annuouncement-title">
-                                                    ĐỔI SIZE MIỄN PHÍ
-                                                </span>
-                                                <span class="annuouncement-text">
-                                                    Tại tất cả cửa hàng trong vòng 1 tuần
-                                                </span>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="owl-controls-clickable">
-                                        <div class="owl-button">
-                                            <div class="owl-prev">
-                                                <span><i class="fas fa-angle-left"></i></span>
-                                            </div>
-                                            <div class="owl-next">
-                                                <span><i class="fas fa-angle-right"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            @RenderBody()
-            
-
-
-        </main>
+        @RenderBody();
         <footer>
             <seletion class="footer-hashtag">
                 <div class="footer-hashtag-title">
