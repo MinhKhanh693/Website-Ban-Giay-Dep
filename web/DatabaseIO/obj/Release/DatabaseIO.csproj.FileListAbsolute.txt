@@ -1,0 +1,15 @@
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\DatabaseIO.dll.config
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\DatabaseIO.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\DatabaseIO.pdb
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\DatabaseProvider.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\EntityFramework.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\EntityFramework.SqlServer.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\DatabaseProvider.pdb
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\DatabaseProvider.dll.config
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\EntityFramework.xml
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Release\EntityFramework.SqlServer.xml
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Release\DatabaseIO.csprojAssemblyReference.cache
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Release\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Release\DatabaseIO.csproj.CopyComplete
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Release\DatabaseIO.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Release\DatabaseIO.pdb

@@ -1,5 +1,6 @@
 ﻿
 using DatabaseProvider.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.UI.WebControls;
@@ -24,12 +25,22 @@ namespace DatabaseIO
             return mydb.Database.SqlQuery<SanPham>(sql).ToList();
 
         }
+
+        public List<SanPham> GetListChiTietSanPham(int ID_SanPham)
+        {
+            string sql = "select * from sanpham where ID_SanPham = '" + ID_SanPham + "'";
+            return mydb.Database.SqlQuery<SanPham>(sql).ToList();
+        }
+
         public List<SanPham> GetlistSanPhamBeGai()
         {
             string sql = "select * from sanpham where ID_loaiSanPham = N'Sandal Bé Gái'";
             return mydb.Database.SqlQuery<SanPham>(sql).ToList();
 
         }
+
+      
+
         public List<SanPham> GetlistSanPhamGosto()
         {
             string sql = "select * from sanpham where ID_loaiSanPham = N'Sandal Nữ'";
@@ -52,6 +63,8 @@ namespace DatabaseIO
             return mydb.Database.SqlQuery<Size>(sql).ToList();
             
         }
+     
+
 
     }
 }

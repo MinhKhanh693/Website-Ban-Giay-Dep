@@ -1,0 +1,279 @@
+
+.row-sanpham{
+    display: grid;
+    grid-template-areas: "t1 t2 t3"
+                         "t4 t4 t5";
+                         
+    grid-template-columns: 97.5px 467.5px 585px;
+    grid-template-rows: 487px 150px;
+    grid-gap: 10px;
+}
+.hinh-sanpham{
+    grid-area: t2;
+}
+.item-hinh-sanpham {
+    border: none;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.item-hinh-sanpham:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.25s ease;
+    transform: translateY(-10px);
+}
+
+.menu-hinh-sanpham {
+    grid-area: t1;
+}
+.menu-item-hinh-sanpham
+{
+    position: relative;
+    height: 400px;
+    padding: 30px 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    border-right: 1px solid #f8f8f8;
+}
+#item-hinh:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.25s ease;
+    transform: translateY(-5px);
+}
+#chua-item-hinh{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+#danhsach-hinh{
+    position: relative;
+    top: -3px;
+    left: 0px;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#item-hinh{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#item-hinh img{
+    border:none;
+    width: auto;
+    height: auto;
+}
+.mTSButton {
+    background-color: transparent;
+    width: 36px;
+    height: 36px;
+    line-height: 42px;
+    margin-left: 30%;
+}
+.mTSButtonIconContainer{
+    font-size: 40px;
+    color: black;
+}
+.ThongTinSanPham{
+    grid-area: t3;
+    padding-left: 20px;
+}
+.ThongTinSanPham h1{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.text-MaSanPham{
+    color: #878087;
+    font-size: 16px;
+}
+.text-MaSanPham span{
+    color: #878087;
+    font-size: 18px;
+}
+.text-GiaTien {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+.khungChua-GiaTien{
+    float: left;
+}
+.text-GiaTien .khungChua-GiaTien .GiaTien{
+    font-size: 24px;
+    font-weight: 400;
+    color: #ed4e4e;
+    margin-right: 10px;  
+}
+.text-ThongTinSanPham{
+    width: 100%;
+    float: left;
+    padding-right: 10px;
+}
+.MauSac label{
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    min-width: 65px;
+}
+
+.Size label{
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    min-width: 65px;
+}
+.Size span{
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-right: 3px;
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    border: 1px solid #878087;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #000;
+}
+.ConHang{
+    margin: 0;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+    margin-bottom: 15px;
+}
+.ConHang .label{
+    min-width: 65px;
+    color: #000;
+    font-size: inherit;
+    padding: 0;
+    margin-right: 23px;
+    font-weight: normal;
+}
+.MuaHang-YeuThich{
+    transition: all 0.2s ease-in-out;
+    margin: 0;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+    margin-bottom: 15px;
+}
+.MuaHang-YeuThich button{
+    width: 250px;
+    height: 40px;
+    background: #f72b3f;
+    padding: 8px 10px;
+    float: left;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0;
+    font-size: 16px;
+}
+.YeuThich{
+    width: 250px;
+    background: transparent;
+    float: right;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0;
+    font-size: 16px;
+    margin-left: 50px;
+}
+.YeuThich a{
+    height: 40px;
+    display: block;
+    width: 100%;
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+    text-align: center;
+    justify-content: center;
+    padding-top: 6px;
+    transition: 0.5s ease;
+}
+.YeuThich a svg{
+    margin-left: 5px;
+}
+.YeuThich a:hover{
+    color: white;
+    background: #E96423;
+}
+.YeuThich .AddFavourite {
+    height: 40px;
+    display: block;
+    width: 100%;
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+    text-align: center;
+    justify-content: center;
+    padding-top: 6px;
+    transition: 0.5s ease;
+}
+
+.YeuThich .AddFavourite svg {
+    margin-left: 5px;
+}
+
+.YeuThich .AddFavourite:hover {
+    color: white;
+    background: #E96423;
+}
+.Hotline-TuVan{
+    border-top: 1px solid #878087;
+    margin-top: 110px;
+    padding-top: 10px;
+    color: #000;
+    font-size: 14px;
+}
+.Payment img{
+   height: auto;
+   width: auto;
+   object-fit: cover;
+   padding-right: 10px;
+}
+.MoTaSanPham{
+    grid-area: t4;
+}
+.tabpanel{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#Mota{
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid #878087;
+    border-left: 1px solid #878087;
+    border-bottom: 1px solid #878087;
+    border-top: 1px solid #878087;
+}
+.pading-15{
+    padding: 15px;
+}
+.pading-15 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    font-size: 18px;
+    color: #878087;
+    margin-bottom: 0px;
+}
+
+

@@ -247,8 +247,9 @@ a{
 .home-cate-banner{
   margin-top: 25px;
 }
-.home-cate-banner img{
-  width: auto;
-  height: auto;
-  object-fit: cover;
-}
+    .home-cate-banner img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        intrinsicsize ="1024 x 1024";
+    }

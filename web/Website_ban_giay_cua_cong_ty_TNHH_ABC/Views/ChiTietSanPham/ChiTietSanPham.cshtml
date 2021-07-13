@@ -1,0 +1,141 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "ChiTietSanPham";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<main clas="main-content">
+    <section class="layout-account">
+        <div class="breadcrum">
+            <div class="container">
+                <div class="row">
+                    <div class="breadcrum-title">
+                        <h1>Chi Tiết Sản Phẩm</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row-sanpham">
+                @foreach (DatabaseProvider.EntityFramework.SanPham sanpham in Model.listChiTietSanPham)
+                {
+                <div class="hinh-sanpham">
+
+                    <img class="item-hinh-sanpham"  intrinsicsize ="1024 x 1024" src="@sanpham.Hinh">
+        
+                </div>
+                    <div class="menu-hinh-sanpham">
+                        <a href="#" id="mTS_1_buttonUp" class="mTSButton mTSButtonUp">
+                            <span class="mTSButtonIconContainer">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                        </a>
+                        <div class="menu-item-hinh-sanpham">
+                            <div id="chua-item-hinh">
+                                <ul id="danhsach-hinh">
+                                    <li id="item-hinh" style="text-align: center;">
+                                        <img src="@sanpham.Hinh"
+                                              alt=" ">
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <a href="#" id="mTS_1_buttondown" class="mTSButton mTSButtondown">
+                            <span class="mTSButtonIconContainer">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="ThongTinSanPham">
+                        <h1>@sanpham.TenSanPham</h1>
+                        <div class="text-MaSanPham">
+                            Mã sản phẩm: <span id="idSanPham" data-id="@sanpham.ID_SanPham">@sanpham.ID_SanPham</span>
+                        </div>
+
+                        <div class="text-GiaTien">
+                            <div class="khungChua-GiaTien">
+                                <span class="GiaTien">@sanpham.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
+                            </div>
+                        </div>
+                        <div class="text-ThongTinSanPham">
+                            <form action="">
+                                <div class="MauSac-Size">
+                                    <div class="MauSac">
+                                        <label>Màu Sắc: </label><span>@sanpham.Mau</span>
+                                    </div>
+                                    <div class="Size">
+                                        <label>
+                                            Kích Thước:
+                                        </label>
+                                        @foreach (DatabaseProvider.EntityFramework.Size size in Model.list_sizeChiTietSanPham[0])
+                                        {
+                                            <span>@size.value1.</span>
+                                            <span>@size.value2.</span>
+                                            <span>@size.value3.</span>
+                                            <span>@size.value4.</span>
+                                            <span>@size.value5.</span>
+                                        }
+
+                                    </div>
+                                </div>
+                                <div class="ConHang">
+                                    <span class="label">Còn hàng:</span>
+                                    <strong>25</strong> Sản Phẩm
+                                </div>
+                                <div class="MuaHang-YeuThich">
+                                    <button type="button" onclick="location.href ='@Url.Action("AddItem", "Cart",new {ID_SanPham = sanpham.ID_SanPham})' ">Mua Ngay</button>
+                                    <div class="YeuThich">
+                                        @if (Session["USER_SESSION"] == null)
+                                        {
+                                            <a href="@Url.Action("Login", "Login", new { id = UrlParameter.Optional })">
+                                                <i class="fa fa-heart"></i>
+                                                Thêm vào yêu thích
+                                            </a>
+                                        }
+                                        else if (Session["USER_SESSION"] != null)
+                                        {
+                                            <button title="Favourite" type="button" class="AddFavourite">
+                                                <i class="fa fa-heart"></i>
+                                                Thêm vào yêu thích
+                                            </button>
+                                        }
+                                    </div>
+                                    <script src="~/Code/ControllersJS/AddFavoutite.js"></script>
+                                </div>
+                                <div class="Hotline-TuVan">
+                                    <div class="Hotline" style="float: left;">
+                                        Tư vấn: <a href="#" style="color: #000; font-size: 16px;">0984943851</a>
+                                    </div>
+                                    <div class="Payment" style="float: right;">
+                                        <img src="//theme.hstatic.net/1000230642/1000679613/14/zalopay.png?v=1148" alt="zalopay">
+                                        <img src="//theme.hstatic.net/1000230642/1000679613/14/visa.png?v=1148" alt="visa">
+                                        <img src="//theme.hstatic.net/1000230642/1000679613/14/mastercard.png?v=1148" alt="mastercard">
+                                        <img src="//theme.hstatic.net/1000230642/1000679613/14/cod.png?v=1148" alt="card">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="MoTaSanPham">
+                        <div class="tabpanel">
+                            <div class="tab-content">
+                                <div id="Mota">
+                                    <div class="pading-15">
+                                        <p>Chưa có mô tả cho sản phẩm này...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+        </div>
+                     
+    </section>
+</main>
+

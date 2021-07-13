@@ -1,9 +1,11 @@
 ﻿using DatabaseIO;
 using DatabaseProvider.EntityFramework;
+using PagedList;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Linq;
 using System.Web.Mvc;
-
+using Website_ban_giay_cua_cong_ty_TNHH_ABC.Code;
 
 namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers
 {
@@ -58,7 +60,7 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers
         }
 
 
-
+        
 
 
     }

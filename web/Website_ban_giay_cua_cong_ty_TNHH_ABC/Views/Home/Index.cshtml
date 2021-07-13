@@ -153,7 +153,7 @@
                                                                 </div>
                                                             </div>
                                                             <h3 class="product-name">
-                                                                <a>@item.TenSanPham @item.ID_SanPham</a>
+                                                                <a>@item.TenSanPham </a>
                                                             </h3>
                                                             <div class="group-name">
                                                                 <div class="name-item">
@@ -162,10 +162,10 @@
                                                                 <div></div>
                                                             </div>
                                                             <div class="product-price">
-                                                                <span class="price">@item.GiaTien đ</span>
+                                                                <span class="price">@item.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
                                                             </div>
                                                             <div class="product-action">
-                                                                <button>Mua Hàng</button>
+                                                                <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = @item.ID_SanPham })' ">Mua Hàng</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -284,10 +284,10 @@
                                                                 <div></div>
                                                             </div>
                                                             <div class="product-price">
-                                                                <span class="price">@sanpham.GiaTien đ</span>
+                                                                <span class="price">@sanpham.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
                                                             </div>
                                                             <div class="product-action">
-                                                                <button>Mua Hàng</button>
+                                                                <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = sanpham.ID_SanPham })' ">Mua Hàng</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -411,10 +411,10 @@
                                                                 <div></div>
                                                             </div>
                                                             <div class="product-price">
-                                                                <span class="price">@sanphamgosto.GiaTien đ</span>
+                                                                <span class="price">@sanphamgosto.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
                                                             </div>
                                                             <div class="product-action">
-                                                                <button>Mua Hàng</button>
+                                                                <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = sanphamgosto.ID_SanPham })' ">Mua Hàng</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -538,10 +538,10 @@
                                                                 <div></div>
                                                             </div>
                                                             <div class="product-price">
-                                                                <span class="price">@sanphamphukien.GiaTien đ</span>
+                                                                <span class="price">@sanphamphukien.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
                                                             </div>
                                                             <div class="product-action">
-                                                                <button>Mua Hàng</button>
+                                                                <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = sanphamphukien.ID_SanPham })' ">Mua Hàng</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -669,10 +669,10 @@
                                                                 <div></div>
                                                             </div>
                                                             <div class="product-price">
-                                                                <span class="price">@sanphambetrai.GiaTien đ</span>
+                                                                <span class="price">@sanphambetrai.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
                                                             </div>
                                                             <div class="product-action">
-                                                                <button>Mua Hàng</button>
+                                                                <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = sanphambetrai.ID_SanPham })' ">Mua Hàng</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -795,10 +795,10 @@
                                                                 <div></div>
                                                             </div>
                                                             <div class="product-price">
-                                                                <span class="price">@sanphambegai.GiaTien đ</span>
+                                                                <span class="price">@sanphambegai.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
                                                             </div>
                                                             <div class="product-action">
-                                                                <button>Mua Hàng</button>
+                                                                <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = sanphambegai.ID_SanPham })' ">Mua Hàng</button>
                                                             </div>
                                                         </div>
                                                     </div>

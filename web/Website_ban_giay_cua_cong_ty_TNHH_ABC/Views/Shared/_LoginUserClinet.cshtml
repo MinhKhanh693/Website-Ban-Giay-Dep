@@ -1,0 +1,39 @@
+﻿
+
+<div id="header-top">
+    <div class="container">
+        <div class="row-2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="dis_flex flex_wrap flex_content_between flex_align_center">
+                    <div class="header-item-hotline">
+                        <a href="#">Hotline: 0984 943 851 (8h- 12h, 13h30 - 17h)</a>
+                    </div>
+                    <div class="header-item"><a href="#">Liên hệ hợp tác</a></div>
+                    <div class="header-item"><a href="#">Tìm cửa hàng</a></div>
+                    <div class="header-item"><a href="#">Kiểm tra đơn hàng</a></div>
+
+                    <div class="header-item-login">
+                        @{
+                            var session = (Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.Userlogin)Session[Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.CommonConstants.USER_SESSION];
+                        }
+                        @if (session == null)
+                        {
+                            <span><a href="@Url.Action("Login", "Login", new { id = UrlParameter.Optional })">Đăng nhập</a></span>
+                            <span>|</span>
+                            <span><a href="@Url.Action("Register", "Register", new { id = UrlParameter.Optional })">Đăng ký</a></span>
+                        }
+                        else
+                        {
+                            <span><a href="">Chào : @session.lastName</a></span>
+                            <span>|</span>
+                            <span><a>@Html.ActionLink("Thoát","Logout","Login")</a></span>
+                        }
+                    </div>
+                    <div class="header-item-logo">
+                        <img src="~/image/images/vi.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

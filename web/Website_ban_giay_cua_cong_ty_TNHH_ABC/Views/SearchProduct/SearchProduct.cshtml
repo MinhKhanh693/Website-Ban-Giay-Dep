@@ -1,0 +1,94 @@
+﻿@model dynamic
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "SearchProduct";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<section class="layout-account">
+    <div class="breadcrum">
+        <div class="container">
+            <div class="row">
+                <div class="breadcrum-title">
+                    <h1>Tìm Kiếm</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Cart-Title">
+        @{
+            var session = (Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.SearchDao)Session[Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.CommonConstants.SearchSession];
+        }
+        <h1>@session.keyword</h1>
+    </div>
+    <div class="center-column">
+        <div class="mask-product-list clearfix">
+            <div id="product_list" class="clearfix content-product-list product-lists">
+                @{int productIndex = 0; }
+                @foreach (DatabaseProvider.EntityFramework.SanPham sanpham in Model.page)
+                {
+                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-6 product-lists-item"
+                         id="@sanpham.ID_SanPham">
+                        <div class="product-list">
+                            <div class="wrapper-item">
+                                <div class="product-list-item">
+                                    <div class="product-item">
+                                        <div class="product-wrap">
+                                            <div class="product-image">
+                                                <a>
+                                                    <img src="@sanpham.Hinh"
+                                                         alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-decs">
+                                                <div class="product-variant-box">
+
+                                                    <p class="variant-text">
+                                                        + @sanpham.ID_SoSize Size
+                                                    </p>
+                                                    <div class="size-box">
+                                                        @foreach (DatabaseProvider.EntityFramework.Size size in Model.list_Size[productIndex++])
+                                                        {
+                                                            <span class="size-item">@size.value1</span>
+                                                            <span class="size-item">@size.value2</span>
+                                                            <span class="size-item">@size.value3</span>
+                                                            <span class="size-item">@size.value4</span>
+                                                            <span class="size-item">@size.value5</span>
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <h3 class="product-name">
+                                                    <a>@sanpham.TenSanPham</a>
+                                                </h3>
+                                                <div class="group-name">
+                                                    <div class="name-item">
+                                                        <a>@sanpham.ID_loaiSanPham</a>
+                                                    </div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="price">@sanpham.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
+                                                </div>
+                                                <div class="product-action">
+                                                    <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = @sanpham.ID_SanPham })' ">Mua Hàng</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+            <br />
+            Trang @(Model.page.PageCount < Model.page.PageNumber ? 0 : Model.page.PageNumber) / @Model.page.PageCount
+        
+            @Html.PagedListPager((IPagedList)Model.page, page => Url.Action("SearchProduct",new {page, @keyword = session.keyword}))
+        </div>
+    </div>
+</section>
+

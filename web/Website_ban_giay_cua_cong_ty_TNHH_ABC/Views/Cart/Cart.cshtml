@@ -1,0 +1,125 @@
+﻿@model List<DatabaseIO.CartItem>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+@section Cart{
+
+    <script src="~/Code/ControllersJS/cartController.js"></script>
+}
+<main clas="main-content">
+    <section class="layout-account">
+        <div class="breadcrum">
+            <div class="container">
+                <div class="row">
+                    <div class="breadcrum-title">
+                        <h1>My Giỏ Hàng</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+     
+                <div class="Cart-Title">
+                    <h1>Giỏ Hàng Của Bạn</h1>
+                </div>
+                @if (Model.Count > 0)
+                {
+                    int totalPrice = 0;              
+                    <div class="cart">
+                        <div class="Cart-Name-Product" style="text-align: center;">
+                            <h4>Tên Sản Phẩm</h4>
+                        </div>
+                        <div class="Cart-Quanlity-Product" style="text-align: center;">
+                            <h4>Số Lượng</h4>
+                        </div>
+                        <div class="Cart-Price-Product" style="text-align: center;">
+                            <h4>Giá</h4>
+                        </div>
+                        <div class="Cart-SumPrice-Product" style="text-align: center;">
+                            <h4>Thành Tiền</h4>
+                        </div>
+                    </div>
+                    foreach (var item in Model)
+                    {
+                        string ads = "";
+                        <button class="Update-Cart" type="button" data-id="@item.SanPham.ID_SanPham">Cập nhật</button>
+                        <div class="Table-Cart">
+                            <button class="Delelt-Cart" type="button" data-id="@item.SanPham.ID_SanPham">Xóa</button>
+                            <div class="Image-Cart">
+                                <img src="@item.SanPham.Hinh"
+                                     alt="">
+                            </div>
+                            <div class="Information-Item ">
+                                <a href="#">@item.SanPham.TenSanPham</a>
+                                <div class="MauSac-Size">
+                                    <div class="MauSac">
+                                        <label>Màu Sắc: </label><span>@item.SanPham.Mau</span>
+                                    </div>
+                                    <div class="Size">
+                                        <label>
+                                            Kích Thước:
+                                        </label>
+                                        <span>40.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Quanlity-Cart">
+
+                                <!-- Example single danger button -->
+
+                                <div class="col-auto">
+                                    <input type="number" style="width:70px ;margin-left:10px" class="form-control textQuanlity" value="@item.quanlity" data-id="@item.SanPham.ID_SanPham">
+                                </div>
+
+                            </div>
+                            <div class="Price-Cart" style="text-align: center;">@item.SanPham.GiaTien.GetValueOrDefault(0).ToString("N0") đ</div>
+                            <div class="SumPrice-Cart" style="text-align: center; color: red;">@((item.quanlity * item.SanPham.GiaTien.GetValueOrDefault(0)).ToString("N0")) đ</div>
+                            <span style="display:none"> @(ads += (item.quanlity * item.SanPham.GiaTien.GetValueOrDefault(0)).ToString())</span>
+                            @{totalPrice += Convert.ToInt32(ads);}
+                        </div>
+                    }
+
+                    <div class="Payment-Cart">
+                        <div class="Payment-Cart-item">
+                            <div class="total-Payment-Cart-item">
+                                <strong>Tạm Tính: </strong>
+                                <span>@totalPrice.ToString("N0") đ</span>
+                            </div>
+                        </div>
+
+
+                        <div class="Checkout">
+                            <button name="Checkout" type="submit">
+                                Thanh Toán Ngay
+                                <br />
+                                (áp dụng cho Việt Nam)
+                            </button>
+                        </div>
+                        <div class="feedback">
+                            <span>Phản Hồi: 0984943851</span>
+                        </div>
+                        <div class="continue-shopping">
+                            <h3>
+                                <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })">
+                                    <i class="fa fa-reply"></i>
+                                    Tiếp tục mua hàng
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                }
+                else
+                {
+
+                    <span style="color:black; font-size:40px;text-align:center;background:red;
+border-radius:20px; height:70px"> <i class="fas fa-shopping-cart"></i>       Chưa có sản phẩm nào trong giỏ hàng </span>
+
+                }
+            </div>
+        </div>
+    </section>
+</main>

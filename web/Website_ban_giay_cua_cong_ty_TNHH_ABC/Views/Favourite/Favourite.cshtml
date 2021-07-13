@@ -1,0 +1,123 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Favourite";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<main clas="main-content">
+    <section class="layout-account">
+        <div class="breadcrum">
+            <div class="container">
+                <div class="row">
+                    <div class="breadcrum-title">
+                        <h1>My Yêu Thích</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="Cart-Title">
+                    <h1 style="color:lightpink">Danh sách sản phẩm yêu thích</h1>
+                </div>
+                @if (Model.listFavourite.Count > 0)
+                {
+                    int totalPrice = 0;
+                    <div class="cart">
+                        <div class="Cart-Name-Product" style="text-align: center;">
+                            <h4>Tên Sản Phẩm</h4>
+                        </div>
+                     @*   <div class="Cart-Quanlity-Product" style="text-align: center;">
+                            <h4>Số Lượng</h4>
+                        </div>*@
+                        <div class="Cart-Price-Product" style="text-align: center;">
+                            <h4>Giá</h4>
+                        </div>
+                        <div class="Cart-SumPrice-Product" style="text-align: center;">
+                            <h4>Thành Tiền</h4>
+                        </div>
+                    </div>
+                    foreach (var item in Model.listFavourite)
+                    {
+                        string ads = "";
+                     
+            <div class="Table-Cart">
+               
+                    <button class="Delelt-Cart" type="button" data-id="@item.ID_YeuThich">Xóa</button>
+                
+                <div class="Image-Cart">
+                    <img src="@item.Hinh"
+                         alt="">
+                </div>
+                <div class="Information-Item ">
+                    <a href="#">@item.TenSanPham</a>
+                    <div class="MauSac-Size">
+                        <div class="MauSac">
+                            <label>Màu Sắc: </label><span>@item.Mau</span>
+                        </div>
+                        <div class="Size">
+                            <label>
+                                Kích Thước:
+                            </label>
+                            <span>40.</span>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="Quanlity-Cart">-->
+                <!-- Example single danger button -->
+                <!--<div class="col-auto">
+            <input type="number" style="width:70px ;margin-left:10px" class="form-control textQuanlity" value="" data-id="@item.ID_SanPham">
+        </div>
+
+    </div>-->
+                <div class="Price-Cart" style="text-align: center;">@item.GiaTien.ToString("N0") đ</div>
+                <div class="SumPrice-Cart" style="text-align: center; color: red;">@(item.GiaTien.ToString("N0")) đ</div>
+                <span style="display:none"> @(ads += item.GiaTien.ToString())</span>
+                @{totalPrice += Convert.ToInt32(ads);}
+            </div>
+                        <script src="~/Code/ControllersJS/DeleteFavourite.js"></script>
+                    }
+
+                    <div class="Payment-Cart">
+                        <div class="Payment-Cart-item">
+                            <div class="total-Payment-Cart-item">
+                                <strong>Tạm Tính: </strong>
+                                <span>@totalPrice.ToString("N0") đ</span>
+                            </div>
+                        </div>
+
+
+                        <div class="Checkout">
+                            <button name="Checkout" type="submit">
+                                Thanh Toán Ngay
+                                <br />
+                                (áp dụng cho Việt Nam)
+                            </button>
+                        </div>
+                        <div class="feedback">
+                            <span>Phản Hồi: 0984943851</span>
+                        </div>
+                        <div class="continue-shopping">
+                            <h3>
+                                <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })">
+                                    <i class="fa fa-reply"></i>
+                                    Tiếp tục mua hàng
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                }
+                else
+                {
+
+                    <span style="color:white; font-size:40px;text-align:center;background-color:lightpink;
+                    border-radius:20px; height:70px"> <i class="fas fa-heart"></i>       Hãy Thêm Sản Phẩm Vào yêu Thích Của Bạn </span>
+
+                }
+            </div>
+        </div>
+    </section>
+</main>
+

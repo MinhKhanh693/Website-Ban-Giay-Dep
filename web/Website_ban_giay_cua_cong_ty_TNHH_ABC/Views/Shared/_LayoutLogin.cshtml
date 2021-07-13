@@ -14,46 +14,27 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css">
     <link rel="stylesheet" href="~/Content/index.css">
     <link rel="stylesheet" href="~/Content/Home.css">
     <link rel="stylesheet" href="~/Content/ProductIndex.css">
     <link rel="stylesheet" href="~/Content/PagedList.css">
     <link rel="stylesheet" href="~/Content/login.css">
+    <link rel="stylesheet" href="~/Content/ChiTietSanPham.css">
+    <link rel="stylesheet" href="~/Content/Cart.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="~/lib/font-awesome/js/all.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+   
+
+
     <title>Document</title>
 </head>
 
 <body>
     <div class="page-container">
         <header>
-            <div id="header-top">
-                <div class="container">
-                    <div class="row-2">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="dis_flex flex_wrap flex_content_between flex_align_center">
-                                <div class="header-item-hotline">
-                                    <a href="#">Hotline: 0984 943 851 (8h- 12h, 13h30 - 17h)</a>
-                                </div>
-                                <div class="header-item"><a href="#">Liên hệ hợp tác</a></div>
-                                <div class="header-item"><a href="#">Kiểm tra đơn hàng</a></div>
-                                <div class="header-item"><a href="#">Kiểm tra đơn hàng</a></div>
-
-                                <div class="header-item-login">
-                                    <span><a href="@Url.Action("Login", "Login", new { id = UrlParameter.Optional })">Đăng nhập</a></span>
-                                    <span>|</span>
-                                    <span><a href="@Url.Action("Register", "Register", new { id = UrlParameter.Optional })">Đăng ký</a></span>
-                                </div>
-                                <div class="header-item-logo">
-                                    <img src="~/image/images/vi.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @{ Html.RenderAction("_LoginUserClinet", "UserLogin");}
             <div id="header-bottom">
                 <div class="container">
                     <div class="row-1">
@@ -92,36 +73,17 @@
                             </ul>
                         </div>
                         <div class="header-bottom-search">
-                            <div class="search-form">
-                                <form class="search-form-swap">
-                                    <input type="text" class="textbox" placeholder="Nhập thông tin bạn...">
-                                    <button title="Search" value="" type="submit" class="button">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </form>
-                            </div>
+                            @{ Html.RenderAction("_Search", "Search");}
 
                         </div>
-                        <div class="header-bottom-cart">
-                            <div class="menu-cart">
-                                <div class="cart-child">
-                                    <a href="#">
-                                        <i class="far fa-heart"></i>
-                                    </a>
-                                </div>
-                                <div class="cart-child">
-                                    <a href="#">
-                                        <span id="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                                        <span id="cart-count">0</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        @{ Html.RenderAction("CartCount", "CartCount");}
                     </div>
                 </div>
             </div>
         </header>
-        @RenderBody();
+
+        @RenderBody()
+
         <footer>
             <seletion class="footer-hashtag">
                 <div class="footer-hashtag-title">
@@ -137,43 +99,43 @@
                     <ul>
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/1.png" alt="">
+                                <img src="~/image/mau/1.png" alt="Mẫu">
                             </a>
                         </li>
 
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/2.png" alt="">
+                                <img src="~/image/mau/2.png" alt="Mẫu">
                             </a>
                         </li>
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/3.png" alt="">
+                                <img src="~/image/mau/3.png" alt="Mẫu">
                             </a>
                         </li>
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/4.png" alt="">
+                                <img src="~/image/mau/4.png" alt="Mẫu">
                             </a>
                         </li>
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/5.png" alt="">
+                                <img src="~/image/mau/5.png" alt="Mẫu">
                             </a>
                         </li>
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/6.png" alt="">
+                                <img src="~/image/mau/6.png" alt="Mẫu">
                             </a>
                         </li>
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/7.png" alt="">
+                                <img src="~/image/mau/7.png" alt="Mẫu">
                             </a>
                         </li>
                         <li class="item-hashtag">
                             <a>
-                                <img src="../image/mau/8.png" alt="">
+                                <img src="~/image/mau/8.png" alt="Mẫu">
                             </a>
                         </li>
                     </ul>
@@ -190,6 +152,7 @@
                                 <span><input placeholder="Nhập E-mail của bạn..."></span>
                                 <span><button>Đăng ký</button></span>
                             </div>
+                            @RenderSection("Search", required: false)
                         </div>
                     </div>
                 </div>
@@ -226,7 +189,7 @@
 
                             <div class="item-info">
                                 <span>
-                                    <h1>Have a nice day, see you soon... </h1>
+                                    <H1>Have a nice day, see you soon... </H1>
                                 </span>
                             </div>
 
@@ -247,7 +210,9 @@
                 </div>
             </section>
         </footer>
+        @RenderSection("Cart", required: false)
     </div>
+ 
 </body>
 
 </html>

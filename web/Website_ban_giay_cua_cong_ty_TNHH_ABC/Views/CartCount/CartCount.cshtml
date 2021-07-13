@@ -1,0 +1,31 @@
+﻿@model List<DatabaseIO.CartItem>
+@{
+    Layout = null;
+}
+<div class="header-bottom-cart">
+    <div class="menu-cart">
+        <div class="cart-child">
+            @if (Session["USER_SESSION"] == null)
+            {
+                <a href="@Url.Action("Login", "Login", new { id = UrlParameter.Optional })">
+                    <i class="far fa-heart"></i>
+                </a>
+            }
+            else if (Session["USER_SESSION"] != null)
+            {
+        <a href="  @Url.Action("Favourite", "Favourite", new { id = UrlParameter.Optional })">
+
+            @{var session = (Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.Userlogin)Session[Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.CommonConstants.USER_SESSION];}
+            <i class="far fa-heart"></i>
+            <span id="cart-count">@session.CountFavourite</span>
+        </a>
+            }
+        </div>
+        <div class="cart-child">
+            <a href="@Url.Action("Cart", "Cart", new { id = UrlParameter.Optional })">
+                <span id="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                <span id="cart-count">@Model.Count</span>
+            </a>
+        </div>
+    </div>
+</div>

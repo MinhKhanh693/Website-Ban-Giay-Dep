@@ -100,7 +100,7 @@
             <div class="mask-product-list clearfix">
                 <div id="product_list" class="clearfix content-product-list product-lists">
                     @{int productIndex = 0; }
-                    @foreach (var sanpham in Model.page)
+                    @foreach (DatabaseProvider.EntityFramework.SanPham sanpham in Model.page)
                     {
                         <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-6 product-lists-item"
                              id="@sanpham.ID_SanPham">
@@ -142,10 +142,10 @@
                                                         <div></div>
                                                     </div>
                                                     <div class="product-price">
-                                                        <span class="price">@sanpham.GiaTien đ</span>
+                                                        <span class="price">@sanpham.GiaTien.GetValueOrDefault(0).ToString("N0") đ</span>
                                                     </div>
                                                     <div class="product-action">
-                                                        <button>Mua Hàng</button>
+                                                        <button type="submit" onclick="location.href ='@Url.Action("ChiTietSanPham", "ChiTietSanPham", new { id = @sanpham.ID_SanPham })' ">Mua Hàng</button>
                                                     </div>
                                                 </div>
                                             </div>

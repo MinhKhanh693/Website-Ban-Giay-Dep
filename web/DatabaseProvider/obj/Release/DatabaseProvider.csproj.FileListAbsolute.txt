@@ -1,0 +1,12 @@
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Release\DatabaseProvider.dll.config
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Release\DatabaseProvider.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Release\DatabaseProvider.pdb
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Release\EntityFramework.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Release\EntityFramework.SqlServer.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Release\EntityFramework.xml
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Release\EntityFramework.SqlServer.xml
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Release\DatabaseProvider.csprojAssemblyReference.cache
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Release\DatabaseProvider.csproj.CoreCompileInputs.cache
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Release\DatabaseProvider.csproj.CopyComplete
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Release\DatabaseProvider.dll
+D:\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Release\DatabaseProvider.pdb

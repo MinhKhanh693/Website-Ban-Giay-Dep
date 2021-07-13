@@ -53,8 +53,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountModel.cs" />
+    <Compile Include="CartItem.cs" />
     <Compile Include="DBIO.cs" />
+    <Compile Include="Favourite.cs" />
+    <Compile Include="FavouriteViewModel.cs" />
+    <Compile Include="ProductDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="UserDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
