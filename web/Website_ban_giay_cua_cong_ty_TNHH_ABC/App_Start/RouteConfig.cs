@@ -33,6 +33,18 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC
               namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
           );
             routes.MapRoute(
+             name: "UpdateAccount",
+             url: "UpdateAccount",
+             defaults: new { controller = "AccountInformation", action = "UpdateAccountView", id = UrlParameter.Optional },
+             namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
+         );
+            routes.MapRoute(
+               name: "AccountInformation",
+               url: "Account",
+               defaults: new { controller = "AccountInformation", action = "AccountInformation", id = UrlParameter.Optional },
+               namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
+            );
+            routes.MapRoute(
               name: "Favourite",
               url: "Favourite",
               defaults: new { controller = "Favourite", action = "Favourite", id = UrlParameter.Optional },

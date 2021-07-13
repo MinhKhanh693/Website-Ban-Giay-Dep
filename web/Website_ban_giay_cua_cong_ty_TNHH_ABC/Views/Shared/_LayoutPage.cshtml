@@ -79,8 +79,20 @@
                     </div>
                 </div>
             </div>
+            <script>
+                $(document).ready(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop()) {
+                            $('#header-bottom').addClass('sticky');
+                        }
+                        else {
+                            $('#header-bottom').removeClass('sticky');
+                        }
+                    });
+                });
+            </script>
         </header>
-        <main clas="main-content">
+        <main clas="main-content" style="padding-top:90px;">
             <section id="slider">
                 <div class="slider-wrapper-outter">
                     <div class="wrapper">
@@ -259,9 +271,26 @@
                 </div>
             </section>
         </footer>
-       
+        <div id="BackTop" >
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop()) {
+                        $('#BackTop').fadeIn();
+                    }
+                    else {
+                        $('#BackTop').fadeOut();
+                    }
+                });
+            });
+            $('#BackTop').click(function () {
+                $('htmt,body').animate({ scrollTop: 0 } , 500);
+            })
+        </script>
     </div>
-   
 </body>
+
 
 </html>

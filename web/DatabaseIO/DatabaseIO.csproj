@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountInformation.cs" />
     <Compile Include="AccountModel.cs" />
     <Compile Include="CartItem.cs" />
     <Compile Include="DBIO.cs" />

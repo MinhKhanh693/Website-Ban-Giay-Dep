@@ -42,6 +42,8 @@ namespace DatabaseProvider.EntityFramework
 
         [StringLength(45)]
         public string QuocTich { get; set; }
+        [StringLength(45)]
+        public string NgaySinh { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GioHang> GioHangs { get; set; }

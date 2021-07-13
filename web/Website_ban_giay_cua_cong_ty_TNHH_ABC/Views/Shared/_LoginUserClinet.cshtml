@@ -24,7 +24,7 @@
                         }
                         else
                         {
-                            <span><a href="">Chào : @session.lastName</a></span>
+                            <span><a href="@Url.Action("AccountInformation", "AccountInformation", new { id = UrlParameter.Optional })">Chào : @session.lastName</a></span>
                             <span>|</span>
                             <span><a>@Html.ActionLink("Thoát","Logout","Login")</a></span>
                         }

@@ -13,6 +13,20 @@ a{
     text-decoration:none;
     color:black;
 }
+#BackTop{
+    width:50px;
+    height:50px;
+    background: tomato;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    position:fixed;
+    bottom:10%;
+    right:20px;
+    cursor:pointer;
+}
 
 [class*="col-"],
 .container {
@@ -192,7 +206,22 @@ a{
 /* header-bottom */
 #header-bottom {
     cursor: pointer;
+    position: fixed;
+    top: 42px;
+    left:0;
+    width:100%;
+    transition:all 0.5s ease-in-out;
 }
+.sticky {
+    background:#fff;
+    opacity:0.5;
+    margin-top:-42px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    font-weight:bold;
+    z-index:5;
+}
+
+
 /* --first-logo-- */
 .fisrt-logo {
     position: absolute;
@@ -364,7 +393,7 @@ ul {
     color: #fff;
     width: 20px;
     height: 20px;
-    top: 55px;
+    top: 15px;
     position:absolute;
     border-radius: 50%;
     text-align: center;

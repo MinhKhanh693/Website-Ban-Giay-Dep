@@ -1,0 +1,76 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "AccountInformation";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<main clas="main-content">
+    <section class="layout-account">
+        <div class="breadcrum">
+            <div class="container">
+                <div class="row">
+                    <div class="breadcrum-title">
+                        <h1>Thông Tin Tài Khoản</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="Cart-Title">
+                    <h1 style="font-size:30px; padding-top:30px;">Tài Khoản Của Bạn</h1>
+                </div>
+            </div>
+            <div class="wrapper-Account">
+                <div class="MenuAccount">
+                    <div class="Account-left">
+                        <h2>
+                            Tải Khoản
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="@Url.Action("AccountInformation", "AccountInformation", new { id = UrlParameter.Optional })">
+                                    <i class="fa fa-user" aria-hidden="true" style="margin-right: 5px;
+                                        font-size: 18px;"></i>
+                                    Thông Tin Tài Khoản
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="UserAccount">
+                    <div class="userbox">
+                        @foreach(DatabaseProvider.EntityFramework.ThongTinKhachHang user in Model.user)
+                        {
+
+
+                        <h2 class="title-detail">
+                            Thông tin tài khoản
+                            <span>
+                                <a href="@Url.Action("UpdateAccountView", "AccountInformation", new { id = UrlParameter.Optional })">
+                                    <i class="fas fa-edit"></i>
+                                    Cập nhật thông tin tài khoản
+                                </a>
+                            </span>
+                        </h2>
+                        <p style="color:red">Họ và tên: <span style="color:black"> @user.lastName @user.firstName</span> </p>
+                        <p style="color:red">Email: <span style="color:black">@user.email</span></p>
+                        <p style="color:red">Địa chỉ: <span style="color:black">@user.DiaChi</span></p>
+                        <p style="color:red">Quốc Gia: <span style="color:black">@user.QuocTich</span></p>
+                        <p style="color:red">Điện Thoại: <span style="color:black">@user.SDT</span></p>
+                        }
+                    </div>
+              
+                       
+                    <div class="userbox" style="padding-top: 30px;">
+                        <h2 class="title-detail" style="margin-bottom: 20px;">Danh sách đơn hàng mới nhất</h2>
+                        <p>Bạn Chưa đặt mua sản phẩm.</p>
+                    </div>
+                      
+                </div>
+            </div>
+
+            </div>
+    </section>
+    </main>
+

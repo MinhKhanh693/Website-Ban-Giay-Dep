@@ -1,0 +1,90 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "UpdateAccount";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+
+
+<main clas="main-content">
+    <section class="layout-account">
+        <div class="breadcrum">
+            <div class="container">
+                <div class="row">
+                    <div class="breadcrum-title">
+                        <h1>Thông Tin Tài Khoản</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="Cart-Title">
+                    <h1 style="font-size:30px; padding-top:30px;">Tài Khoản Của Bạn</h1>
+                </div>
+            </div>
+            <div class="wrapper-Account">
+                <div class="MenuAccount">
+                    <div class="Account-left">
+                        <h2>
+                            Tải Khoản
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="@Url.Action("AccountInformation", "AccountInformation", new { id = UrlParameter.Optional })">
+                                    <i class="fa fa-user" aria-hidden="true" style="margin-right: 5px;
+                                        font-size: 18px;"></i>
+                                    Thông Tin Tài Khoản
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="UpdateUserAccount">
+                    @foreach (DatabaseProvider.EntityFramework.ThongTinKhachHang user in Model.user)
+                    {
+                    <form class="extraInfo" style="height:825.5px ; width: 422.6px;">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="firstName"
+                                   placeholder="Họ" value="@user.firstName">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="lastName"
+                                   placeholder="Tên" value="@user.lastName">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="email"
+                                   placeholder="Email" value="@user.email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="SDT"
+                                   placeholder="Số điện thoại(*)" value="@user.SDT">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="NgaySinh"
+                                   placeholder="Ngày Sinh (dd/mm/yyyy)(*)" value="@user.NgaySinh">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="DiaChi"
+                                   placeholder="Địa chỉ" value="@user.DiaChi">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="QuocTich"
+                                   placeholder="Quốc Tịch" value="@user.QuocTich">
+                        </div>
+
+                        <div class="action_bottom action_link text-center" style="text-align: center;width: 840px;">
+                            <input class="btn-button" type="submit" value="Cập nhật" id="UpdateButton">
+                            <span style="font-size: 16px; display: block;">
+                                hoặc
+                                <a href="@Url.Action("AccountInformation", "AccountInformation", new { id = UrlParameter.Optional })">Hủy</a>
+                            </span>
+                        </div>
+                    </form>
+                    }
+                    <script src="~/Code/ControllersJS/UpdateAccoutInformation.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
