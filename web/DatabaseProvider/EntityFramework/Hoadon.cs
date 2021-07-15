@@ -16,6 +16,10 @@ namespace DatabaseProvider.EntityFramework
 
         public int? ID_SanPham { get; set; }
 
+        public int SoLuong { get; set; }
+
+        public decimal? TongTien { get; set; }
+
         public virtual SanPham SanPham { get; set; }
 
         public virtual ThongTinKhachHang ThongTinKhachHang { get; set; }

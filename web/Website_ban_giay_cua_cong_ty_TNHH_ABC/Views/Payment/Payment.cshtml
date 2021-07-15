@@ -1,0 +1,139 @@
+﻿@model List<DatabaseIO.CartItem>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Payment</title>
+    <link rel="stylesheet" href="~/Content/Payment.css">
+    <link rel="stylesheet" href="~/Content/index.css">
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="wrap">
+            <div class="sidebar">
+                <div class="oder-summary-item">
+                    <table class="item-oder" style="    width: 100%;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    font-size: 1em;">
+                        <tbody style="display: table-row-group;
+                        vertical-align: middle;
+                        border-color: inherit;">
+                            @{ int totalPrice = 0;  }
+                            @foreach (var item in Model)
+                            {
+                                string ads = "";
+                                <tr class="Product">
+                                    <td>
+                                        <img src="@item.SanPham.Hinh" alt=""
+                                             class="Product-item">
+                                    </td>
+                                    <td>
+                                        <span class="Name">
+                                            @item.SanPham.TenSanPham
+                                        </span><br /><span class="color">@item.SanPham.Mau/40</span>
+
+                                        <span class="quanlity">x @item.quanlity</span>
+                                    </td>
+                                    <td><span class="price">@((item.quanlity * item.SanPham.GiaTien.GetValueOrDefault(0)).ToString("N0")) đ</span></td>
+                                </tr>
+                                <span style="display:none"> @(ads += (item.quanlity * item.SanPham.GiaTien.GetValueOrDefault(0)).ToString())</span>
+                                totalPrice += Convert.ToInt32(ads);
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="oder-summary-item">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Mã Giảm Giá"
+                               aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"
+                              style="background-color: blue; color: white;">Sử dụng</span>
+                    </div>
+                </div>
+                <div class="oder-summary-item">
+
+                    <span class="price">@totalPrice.ToString("N0") đ</span><br />
+                    <span class="title-price">Tạm Tính</span><br />
+                    <span class="title-transport-price">Phí Vận Chuyển</span>
+                    <span class="transport-price">50.000 đ</span>
+                </div>
+                <div class="oder-summary-item">
+                    <span class="title-transport-price">Tổng cộng</span>
+                   <span style="display:none"> @(totalPrice += 50000)</span>
+                <span class="transport-price">@totalPrice.ToString("N0") đ</span>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-header" style="padding-bottom: 2rem;"></div>
+                <div class="main-content">
+                    <div class="step">
+                        <div class="step-sections">
+                            <div class="section" style="padding-top: 0;">
+                                <div class="section-header" style="margin-bottom: 1.5em;">
+                                    <h2 style="color: #333333;font-size: 1.28571em;">Thông tin giao hàng?</h2>
+                                </div>
+                                <div class="section-content" style="zoom: 1;
+                                margin-bottom: 2em;">
+                                    <p style="margin-bottom: 0.75em;">
+                                        Bạn có tài khoản chưa?
+                                        <a href="#">Đăng nhập</a>
+                                    </p>
+                                    <div class="fieldset" style="margin: -0.45em;
+                                zoom: 1;">
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Họ và tên" style="width: 90%;">
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email" style="width: 90%;">
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Số điện thoại" style="width: 90%;">
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <textarea class="form-control" placeholder="Địa chỉ" id="floatingTextarea" style="width: 90%;"></textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-footer">
+                            <form>
+                                <button type="button" class="btn btn-outline-secondary" style="width: 40%;float: right; margin-right: 50px;">Thanh toán</button>
+                            </form>
+                            <a href="@Url.Action("Cart", "Cart", new { id = UrlParameter.Optional })" ><i class="fas fa-chevron-left"></i>  Giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section id="footer-bottom">
+            <div class="container">
+                <div class="row-2">
+                    <div class="footer-bottom-item">
+                        <span>
+                            <h1>Website bán giày dép của công ty TNHH ABC </h1>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

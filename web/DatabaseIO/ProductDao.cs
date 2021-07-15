@@ -9,6 +9,7 @@ namespace DatabaseIO
 {
     public class ProductDao
     {
+       
         MyModel mydb = new MyModel();
         public SanPham ViewDetail(int id)
         {

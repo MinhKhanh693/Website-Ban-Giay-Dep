@@ -32,9 +32,10 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers
             foreach (var item in sessionCart)
             {
                 var jsonItem = jsonCart.SingleOrDefault(x => x.SanPham.ID_SanPham == item.SanPham.ID_SanPham);
+          
                 if (jsonItem != null)
                 {
-                    item.quanlity = jsonItem.quanlity;
+                    item.quanlity = jsonItem.quanlity;                
                 }
             }
             Session[CommonConstants.CartSession] = sessionCart;
@@ -58,9 +59,11 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers
 
         public ActionResult AddItem(int ID_SanPham, int quanlity = 1)
         {
+            
             var product = new ProductDao().ViewDetail(ID_SanPham);
+   
+         
             var cart = Session[CommonConstants.CartSession];
-
             if (cart != null)
             {
                 var list = (List<CartItem>)cart;

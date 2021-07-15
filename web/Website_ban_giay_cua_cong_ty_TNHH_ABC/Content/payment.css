@@ -1,0 +1,93 @@
+.content{
+   padding: 0px 10%; 
+   height: 100%;
+   background: #FAFAFA;
+}
+.wrap{
+    padding: 0px 5%;
+    display: grid;
+    grid-template-areas: "t1 t2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 674px;
+    
+}
+.sidebar{
+    grid-area: t2;
+    padding-left: 5px;
+    display: grid;
+    grid-template-areas: "t3" "t4" "t5" "t6";
+    grid-template-rows: 1fr 100px 120px 1fr;
+    color: #717171;
+    border-left: 1px solid #e1e1e1;
+    border-color: #e1e1e1;
+    background: #FAFAFA;
+    background-position: left top;
+}
+.oder-summary-item{
+    border-bottom: 1px solid;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-color: #e1e1e1;
+}
+.oder-summary-item:nth-child(1){
+    grid-area: t3;
+}
+.oder-summary-item:nth-child(2){
+    grid-area: t4;
+}
+.oder-summary-item:nth-child(3){
+    grid-area: t5;
+}
+.oder-summary-item:nth-child(4){
+    grid-area: t6;
+    border-bottom: none;
+}
+.Product-item{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+}
+.Name{
+    font-weight: 500;
+    color: #4b4b4b;
+}
+.color{
+    font-size: 0.85714em;
+    color: #969696;
+}
+.price{
+    float: right;
+    font-weight: 500;
+    color: red;
+    padding-top: 20px;
+}
+.quanlity{
+    padding-left: 150px;
+    color: red;
+    font-size: 16px;
+}
+.transport-price{
+    float: right;
+    font-weight: 500;
+    color: red;
+
+}
+.main{
+    grid-area: t1;
+}
+.step-sections{
+    position: relative;
+    z-index: 3;
+}
+.step-footer a:hover{
+    color:red;
+}
+.step-footer a{
+    transition:all 0.5s ease-in-out;
+    font-size:16px;
+}

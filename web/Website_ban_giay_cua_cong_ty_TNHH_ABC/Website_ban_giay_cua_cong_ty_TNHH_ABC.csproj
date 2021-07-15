@@ -212,6 +212,7 @@
     <Compile Include="Controllers\FavouriteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Controllers\ProductBeGaiController.cs" />
     <Compile Include="Controllers\ProductBeTraiController.cs" />
     <Compile Include="Controllers\ProductFemaleController.cs" />
@@ -232,6 +233,7 @@
     <Content Include="Code\ControllersJS\AddFavoutite.js" />
     <Content Include="Code\ControllersJS\cartController.js" />
     <Content Include="Code\ControllersJS\DeleteFavourite.js" />
+    <Content Include="Code\ControllersJS\Payment.js" />
     <Content Include="Code\ControllersJS\SearchProduct.js" />
     <Content Include="Code\ControllersJS\UpdateAccoutInformation.js" />
     <Content Include="Content\Cart.css" />
@@ -240,6 +242,7 @@
     <Content Include="Content\index.css" />
     <Content Include="Content\login.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\payment.css" />
     <Content Include="Content\ProductIndex.css" />
     <Content Include="Content\ThongTinTaiKhoan.css" />
     <Content Include="Global.asax" />
@@ -432,6 +435,7 @@
     <Content Include="Views\Favourite\Favourite.cshtml" />
     <Content Include="Views\AccountInformation\AccountInformation.cshtml" />
     <Content Include="Views\AccountInformation\UpdateAccountView.cshtml" />
+    <Content Include="Views\Payment\Payment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DatabaseIO\DatabaseIO.csproj">

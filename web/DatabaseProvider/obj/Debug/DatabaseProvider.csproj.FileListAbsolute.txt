@@ -22,3 +22,27 @@ D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer
 D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\EntityFramework.xml
 D:\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer.xml
 D:\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Debug\DatabaseProvider.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\DatabaseProvider.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\DatabaseProvider.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Debug\DatabaseProvider.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Debug\DatabaseProvider.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Debug\DatabaseProvider.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Debug\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseProvider\obj\Debug\DatabaseProvider.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\bin\Debug\DatabaseProvider.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\bin\Debug\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\bin\Debug\DatabaseProvider.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\bin\Debug\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\bin\Debug\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\obj\Debug\DatabaseProvider.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\obj\Debug\DatabaseProvider.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\obj\Debug\DatabaseProvider.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\obj\Debug\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseProvider\obj\Debug\DatabaseProvider.pdb

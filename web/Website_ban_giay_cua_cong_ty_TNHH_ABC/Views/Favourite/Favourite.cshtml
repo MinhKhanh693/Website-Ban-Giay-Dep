@@ -28,9 +28,9 @@
                         <div class="Cart-Name-Product" style="text-align: center;">
                             <h4>Tên Sản Phẩm</h4>
                         </div>
-                     @*   <div class="Cart-Quanlity-Product" style="text-align: center;">
-                            <h4>Số Lượng</h4>
-                        </div>*@
+                        @*   <div class="Cart-Quanlity-Product" style="text-align: center;">
+                    <h4>Số Lượng</h4>
+                </div>*@
                         <div class="Cart-Price-Product" style="text-align: center;">
                             <h4>Giá</h4>
                         </div>
@@ -41,72 +41,75 @@
                     foreach (var item in Model.listFavourite)
                     {
                         string ads = "";
-                     
-            <div class="Table-Cart">
-               
-                    <button class="Delelt-Cart" type="button" data-id="@item.ID_YeuThich">Xóa</button>
-                
-                <div class="Image-Cart">
-                    <img src="@item.Hinh"
-                         alt="">
-                </div>
-                <div class="Information-Item ">
-                    <a href="#">@item.TenSanPham</a>
-                    <div class="MauSac-Size">
-                        <div class="MauSac">
-                            <label>Màu Sắc: </label><span>@item.Mau</span>
-                        </div>
-                        <div class="Size">
-                            <label>
-                                Kích Thước:
-                            </label>
-                            <span>40.</span>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="Quanlity-Cart">-->
-                <!-- Example single danger button -->
-                <!--<div class="col-auto">
-            <input type="number" style="width:70px ;margin-left:10px" class="form-control textQuanlity" value="" data-id="@item.ID_SanPham">
-        </div>
 
-    </div>-->
-                <div class="Price-Cart" style="text-align: center;">@item.GiaTien.ToString("N0") đ</div>
-                <div class="SumPrice-Cart" style="text-align: center; color: red;">@(item.GiaTien.ToString("N0")) đ</div>
-                <span style="display:none"> @(ads += item.GiaTien.ToString())</span>
-                @{totalPrice += Convert.ToInt32(ads);}
-            </div>
-                        <script src="~/Code/ControllersJS/DeleteFavourite.js"></script>
-                    }
+                        <div class="Table-Cart">
 
-                    <div class="Payment-Cart">
-                        <div class="Payment-Cart-item">
-                            <div class="total-Payment-Cart-item">
-                                <strong>Tạm Tính: </strong>
-                                <span>@totalPrice.ToString("N0") đ</span>
+                            <button class="Delelt-Cart" type="button" data-id="@item.ID_YeuThich">Xóa</button>
+
+                            <div class="Image-Cart">
+                                <img src="@item.Hinh"
+                                     alt="">
                             </div>
-                        </div>
-
-
-                        <div class="Checkout">
-                            <button name="Checkout" type="submit">
-                                Chuyển Đến Giỏi Hàng
-                                <br />
-                                (áp dụng cho Việt Nam)
-                            </button>
-                        </div>
-                        <div class="feedback">
-                            <span>Phản Hồi: 0984943851</span>
-                        </div>
-                        <div class="continue-shopping">
-                            <h3>
-                                <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })">
-                                    <i class="fa fa-reply"></i>
-                                    Tiếp tục mua hàng
-                                </a>
-                            </h3>
-                        </div>
+                            <div class="Information-Item ">
+                                <a href="#">@item.TenSanPham</a>
+                                <div class="MauSac-Size">
+                                    <div class="MauSac">
+                                        <label>Màu Sắc: </label><span>@item.Mau</span>
+                                    </div>
+                                    <div class="Size">
+                                        <label>
+                                            Kích Thước:
+                                        </label>
+                                        <span>40.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="Quanlity-Cart">-->
+                            <!-- Example single danger button -->
+                            <!--<div class="col-auto">
+                        <input type="number" style="width:70px ;margin-left:10px" class="form-control textQuanlity" value="" data-id="@item.ID_SanPham">
                     </div>
+
+                </div>-->
+                            <div class="Price-Cart" style="text-align: center;">@item.GiaTien.ToString("N0") đ</div>
+                            <div class="SumPrice-Cart" style="text-align: center; color: red;">@(item.GiaTien.ToString("N0")) đ</div>
+                            <span style="display:none"> @(ads += item.GiaTien.ToString())</span>
+                            <span style="display:none" id="ID-SanPham-Favourite" data-id="@item.ID_SanPham"></span>
+                            @{totalPrice += Convert.ToInt32(ads);}
+                        </div>
+
+                    }
+                  
+            <div class="Payment-Cart">
+                <div class="Payment-Cart-item">
+                    <div class="total-Payment-Cart-item">
+                        <strong>Tạm Tính: </strong>
+                        <span>@totalPrice.ToString("N0") đ</span>
+                    </div>
+                </div>
+
+
+                <div class="Checkout">
+                    <button name="Checkout" type="button" id="AddCart" @*onclick="location.href='@Url.Action("Cart", "Cart", new { id = UrlParameter.Optional })'*@>
+                        Chuyển Đến Giỏ Hàng
+                        <br />
+
+                    </button>
+                </div>
+                <script src="~/Code/ControllersJS/DeleteFavourite.js"></script>
+                <script src="~/Code/ControllersJS/AddFavoutite.js"></script>
+                <div class="feedback">
+                    <span>Phản Hồi: 0984943851</span>
+                </div>
+                <div class="continue-shopping">
+                    <h3>
+                        <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })">
+                            <i class="fa fa-reply"></i>
+                            Tiếp tục mua hàng
+                        </a>
+                    </h3>
+                </div>
+            </div>
 
                 }
                 else

@@ -28,3 +28,33 @@ D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileIn
 D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
 D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.dll
 D:\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\DatabaseIO.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\DatabaseIO.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\DatabaseProvider.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\DatabaseProvider.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\DatabaseIO\obj\Debug\DatabaseIO.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\DatabaseIO.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\DatabaseIO.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\DatabaseProvider.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\DatabaseProvider.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\obj\Debug\DatabaseIO.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\DatabaseIO\obj\Debug\DatabaseIO.pdb

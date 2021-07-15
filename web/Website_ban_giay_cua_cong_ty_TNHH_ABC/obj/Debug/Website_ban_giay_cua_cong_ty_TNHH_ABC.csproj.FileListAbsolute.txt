@@ -219,3 +219,267 @@ D:\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Dia
 D:\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Memory.xml
 D:\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Numerics.Vectors.xml
 D:\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Website_ban_giay_cua_cong_ty_TNHH_ABC.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Website_ban_giay_cua_cong_ty_TNHH_ABC.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Website_ban_giay_cua_cong_ty_TNHH_ABC.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csc.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csc.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csc.rsp
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csi.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csi.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csi.rsp
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.AppContext.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Console.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.Compression.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Net.Http.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Net.Sockets.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.ValueTuple.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\vbc.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\vbc.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\vbc.rsp
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Antlr3.Runtime.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseIO.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Authorization.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Options.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Newtonsoft.Json.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Buffers.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.ComponentModel.Annotations.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Memory.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Numerics.Vectors.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Helpers.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Optimization.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\WebGrease.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseIO.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseIO.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseProvider.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseProvider.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Authorization.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Options.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Buffers.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Memory.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Numerics.Vectors.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Helpers.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Optimization.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Newtonsoft.Json.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Antlr3.Runtime.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Website_ban_giay_cua_cong_ty_TNHH_ABC.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Website_ban_giay_cua_cong_ty_TNHH_ABC.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Website_ban_giay_cua_cong_ty_TNHH_ABC.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csc.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csc.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csc.rsp
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csi.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csi.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\csi.rsp
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.AppContext.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Console.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.Compression.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Net.Http.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Net.Sockets.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.ValueTuple.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\vbc.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\vbc.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\vbc.rsp
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Antlr3.Runtime.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseIO.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseProvider.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Authorization.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Options.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Newtonsoft.Json.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Buffers.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.ComponentModel.Annotations.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Memory.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Numerics.Vectors.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Helpers.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Optimization.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\WebGrease.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseIO.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseIO.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseProvider.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\DatabaseProvider.dll.config
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Authorization.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Options.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\PagedList.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Buffers.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Memory.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Numerics.Vectors.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Helpers.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Optimization.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Newtonsoft.Json.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Antlr3.Runtime.pdb
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.dll
+C:\Users\admin\OneDrive\Máy tính\Website-Ban-Giay-Dep - Copy\web\Website_ban_giay_cua_cong_ty_TNHH_ABC\obj\Debug\Website_ban_giay_cua_cong_ty_TNHH_ABC.pdb

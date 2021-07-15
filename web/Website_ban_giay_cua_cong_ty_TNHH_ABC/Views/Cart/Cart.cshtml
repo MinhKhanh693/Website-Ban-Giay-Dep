@@ -89,15 +89,15 @@
                                 <span>@totalPrice.ToString("N0") đ</span>
                             </div>
                         </div>
-
-
                         <div class="Checkout">
-                            <button name="Checkout" type="submit">
+                            <button id ="payment"name="Checkout" type="button" onclick="location.href='@Url.Action("Payment", "Payment", new { id = UrlParameter.Optional })'">
                                 Thanh Toán Ngay
                                 <br />
                                 (áp dụng cho Việt Nam)
                             </button>
                         </div>
+                        <script src="~/Code/ControllersJS/Payment.js"></script>
+                
                         <div class="feedback">
                             <span>Phản Hồi: 0984943851</span>
                         </div>

@@ -13,7 +13,12 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-       
+            routes.MapRoute(
+                   name: "Payment",
+                   url: "Payment/{id}",
+                   defaults: new { controller = "Payment", action = "Payment", id = UrlParameter.Optional },
+                   namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
+               );
             routes.MapRoute(
                name: "Cart",
                url: "Cart",

@@ -12,7 +12,7 @@ namespace DatabaseIO
         MyModel mydb = new MyModel();
         public List<FavouriteViewModel> GetListFavourite(int IdUser)
         {
-           
+
             var model = from y in mydb.YeuThiches
                         join c in mydb.SanPhams on y.ID_SanPham equals c.ID_SanPham
                         join t in mydb.ThongTinKhachHangs on y.ID_ThongTinKhachHang equals t.ID_ThongTinKhachHang
@@ -26,6 +26,7 @@ namespace DatabaseIO
                             ID_loaiSanPham = c.ID_loaiSanPham,
                             ID_SoSize = c.ID_SoSize,
                             ID_YeuThich = y.ID_YeuThich,
+                            ID_SanPham = c.ID_SanPham,
                         };                      
             return model.ToList();
         }     
