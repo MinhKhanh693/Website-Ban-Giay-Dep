@@ -13,7 +13,7 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers
     public class ChiTietSanPhamController : Controller
     {
         // GET: ChiTietSanPham
-        private SqlConnection con;
+
         public ActionResult ChiTietSanPham(int id = 0)
         {
             DBIO Mymodel = new DBIO();

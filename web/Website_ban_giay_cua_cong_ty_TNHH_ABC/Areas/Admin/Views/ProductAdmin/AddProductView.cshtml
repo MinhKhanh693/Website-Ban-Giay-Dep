@@ -1,0 +1,77 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Thêm sản phẩm mới</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Danh sánh thông tin
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>Tên sản phẩm</label>
+                                    <input class="form-control" id="TenSanPhamAdmin">
+                                </div>
+                                <div class="form-group">
+                                    <label>Loại sản phẩm</label>
+                                  
+                                    <select class="form-control" id="LoaiSanPhamAdmin">
+                                        @foreach (DatabaseProvider.EntityFramework.LoaiSanPham item in Model.listLoaiSanPham)
+                                        {
+                                            <option>@item.GroupName</option>
+                                        }
+                                        </select>
+                                 
+                                </div>
+                                <div class="form-group">
+                                    <label>Giá tiền</label>
+                                    <input class="form-control" id="GiaTienSanPhamAdmin">
+                                </div>
+                                <div class="form-group">
+                                    <label>Số Size</label>
+                                    <select class="form-control" id="SoSizeSanPhamAdmin">
+                                        @foreach (DatabaseProvider.EntityFramework.Size item in Model.listSize)
+                                        {
+                                            <option>@item.ID_SoSize</option>
+                                            
+                                        }
+                                        </select>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label>Màu</label>
+                                    <input class="form-control" id="MauSanPhamAdmin">
+                                </div>
+                                <div class="form-group">
+                                    <label>File hình ảnh (jpg)</label>
+                                    <input type="file" id="HinhSanPhamAdmin">
+                                </div>
+                                <div class="form-group">
+                                    <label>Mô tả sản phẩm</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default" id="btnUpdateAdmin">Cập nhật</button>              
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <script src="~/Areas/Admin/code/controllerJS/AddProduct.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="AccountInformation.cs" />
     <Compile Include="AccountModel.cs" />
+    <Compile Include="AdminDao.cs" />
     <Compile Include="CartItem.cs" />
     <Compile Include="DBIO.cs" />
     <Compile Include="Favourite.cs" />

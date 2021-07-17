@@ -11,8 +11,42 @@ namespace DatabaseIO
     {
 
         MyModel mydb = new MyModel();
-        
-       
+
+        public List<LoaiSanPham> GetListLoaiSanPham()
+        {
+            string sql = "select * from LoaiSanPham ";
+            return mydb.Database.SqlQuery<LoaiSanPham>(sql).ToList();
+        }
+        public List<Size> GetListSize()
+        {
+            string sql = "select * from Size ";
+            return mydb.Database.SqlQuery<Size>(sql).ToList();
+        }
+        public List<Hoadon> GetListHoaDon()
+        {
+            string sql = "select * from hoadon ";
+            return mydb.Database.SqlQuery<Hoadon>(sql).ToList();
+        }
+        public List<ThongTinKhachHang> GetListThongTinKhachHang()
+        {
+            string sql = "select * from ThongTinKhachHang ";
+            return mydb.Database.SqlQuery<ThongTinKhachHang>(sql).ToList();
+        }
+        public List<ThongTinKhachHang> GetListThongTinKhachHang(int id)
+        {
+            string sql = "select * from ThongTinKhachHang where id_thongtinkhachhang = '"+id+"'";
+            return mydb.Database.SqlQuery<ThongTinKhachHang>(sql).ToList();
+        }
+        public List<SanPham> GetListSanPham(int id)
+        {
+            string sql = "select * from sanpham where ID_Sanpham = '"+id+"'";
+            return mydb.Database.SqlQuery<SanPham>(sql).ToList();
+        }
+        public List<SanPham> GetListSanPham()
+        {
+            string sql = "select * from sanpham ";
+            return mydb.Database.SqlQuery<SanPham>(sql).ToList();
+        }
         public List<SanPham> Getlist_SanPham()
         {
             string sql = "select * from sanpham where ID_loaiSanPham = N'Hunter Nam'";
@@ -38,8 +72,6 @@ namespace DatabaseIO
             return mydb.Database.SqlQuery<SanPham>(sql).ToList();
 
         }
-
-      
 
         public List<SanPham> GetlistSanPhamGosto()
         {

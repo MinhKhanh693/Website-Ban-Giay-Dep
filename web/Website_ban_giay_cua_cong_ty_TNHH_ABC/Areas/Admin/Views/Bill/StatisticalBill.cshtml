@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Biểu đồ hóa đơn";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Flot</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Bar Chart Example
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="flot-chart">
+                        <div class="flot-chart-content" id="flot-bar-chart"></div>
+                    </div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+</div>
+
+<!-- Flot Charts JavaScript -->
+<script src="~/Areas/Admin/content/js/flot/excanvas.min.js"></script>
+<script src="~/Areas/Admin/content/js/flot/jquery.flot.js"></script>
+<script src="~/Areas/Admin/content/js/flot/jquery.flot.pie.js"></script>
+<script src="~/Areas/Admin/content/js/flot/jquery.flot.resize.js"></script>
+<script src="~/Areas/Admin/content/js/flot/jquery.flot.time.js"></script>
+<script src="~/Areas/Admin/content/js/flot/jquery.flot.tooltip.min.js"></script>
+<script src="~/Areas/Admin/content/js/flot-data.js"></script>

@@ -1,0 +1,166 @@
+﻿@model dynamic
+@{ 
+    ViewBag.Title = "AccountManagement";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutPageAdmin.cshtml"; 
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Account User</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Danh sách Thông tin người dùng theo mã định danh
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-examplee">
+                            <thead>
+                                <tr>
+                                    <th>Sửa</th>
+                                    <th>Mã định danh</th>
+                                    <th>Email</th>
+                                    <th>Họ</th>
+                                    <th>Tên</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Quốc tịch</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Xóa</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    @foreach (DatabaseProvider.EntityFramework.ThongTinKhachHang item in Model.ListThongTinKhachHang)
+                                        {
+                                    <tr class="gradeU/A">
+                                        <td><a href="@Url.Action("EditAccountView", "AccountManagement", new { id = item.ID_ThongTinKhachHang })"><i class="fa fa-wrench fa-fw"></i></a> </td>
+                                        <td>@item.ID_ThongTinKhachHang</td>
+                                        <td>@item.email</td>
+                                        <td>@item.firstName</td>
+                                        <td>@item.lastName</td>
+                                        <td>@item.SDT</td>
+                                        <td>@item.QuocTich</td>
+                                        <td>@item.NgaySinh</td>
+                                        <td>@item.DiaChi</td>
+                                        <td><button type="button" class="btn btn-danger " onclick="location.href='@Url.Action("DeleteAccountView", "AccountManagement", new { id = item.ID_ThongTinKhachHang })'" ><i class="fa fa-close fa-fw"></i></button></td>
+                                    </tr>
+                                    }
+                                </tbody>
+                        </table>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Danh sách tài khoản người dùng theo mã định danh
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="dataTables-example">
+                            <thead>
+                                <tr>
+                                    <th>Mã định danh</th>
+                                    <th>Email</th>
+                                    <th>Password</th>
+                                    <th>Status</th>
+
+                                </tr>
+                            </thead>
+                            @foreach (DatabaseProvider.EntityFramework.ThongTinKhachHang item in Model.ListThongTinKhachHang)
+                            {
+                                <tbody>
+                                    <tr>
+                                    <td>@item.ID_ThongTinKhachHang</td>
+                                    <td>@item.email</td>
+                                    <td>@item.password</td>
+                                    <td>True</td>
+                                    </tr>
+                                 </tbody>}
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p class="text-danger">Top khách hàng vip </p>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#Ranking</th>
+                                    <th>Họ</th>
+                                    <th>Tên</th>
+                                    <th>Email</th>
+                                    <th>Mã định danh</th>
+
+                                </tr>
+                            </thead>
+                           
+                            <tbody>
+                                <tr class="success">
+                                    <td>1</td>
+                                    <td>Minh</td>
+                                    <td>Khánh</td>
+                                    <td>khanhdoan693@gmail.com</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr class="info">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="warning">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="danger">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+</div>
+                  

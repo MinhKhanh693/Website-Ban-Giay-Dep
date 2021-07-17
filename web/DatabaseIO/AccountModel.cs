@@ -24,6 +24,17 @@ namespace DatabaseIO
             var res = mydb.Database.SqlQuery<bool>("Sp_Account_Login @Email,@Password",sqlParams).SingleOrDefault();
             return res;
         }
+        public bool LoginAdmin(string username, string password)
+        {
+            object[] sqlParams =
+            {
+                new SqlParameter("@username" , username),
+                new SqlParameter("@Password" , password),
+
+            };
+            var res = mydb.Database.SqlQuery<bool>("Sp_Account_LoginAdmin @username,@Password", sqlParams).SingleOrDefault();
+            return res;
+        }
 
     }
 }

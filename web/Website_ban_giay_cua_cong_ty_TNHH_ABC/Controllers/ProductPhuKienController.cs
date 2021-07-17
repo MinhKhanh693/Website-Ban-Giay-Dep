@@ -1,12 +1,10 @@
 ﻿using DatabaseIO;
-using System;
+using DatabaseProvider.EntityFramework;
+using PagedList;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using DatabaseProvider.EntityFramework;
-using PagedList;
 
 namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers
 {
