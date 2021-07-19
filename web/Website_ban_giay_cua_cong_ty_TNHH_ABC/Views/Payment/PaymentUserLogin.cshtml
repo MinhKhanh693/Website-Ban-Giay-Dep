@@ -1,4 +1,7 @@
-﻿@model List<DatabaseIO.CartItem>
+﻿@model dynamic
+@{
+    ViewBag.Title = "Payment";
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +29,8 @@
                         <tbody style="display: table-row-group;
                         vertical-align: middle;
                         border-color: inherit;">
-                            @{ int totalPrice = 0;  }
-                            @foreach (var item in Model)
+                            @{ int totalPrice = 0; }
+                            @foreach (var item in Model.list)
                             {
                                 string ads = "";
                                 <tr class="Product">
@@ -42,9 +45,9 @@
 
                                         <span class="quanlity">x @item.quanlity</span>
                                     </td>
-                                    <td><span class="price">@((item.quanlity * item.SanPham.GiaTien.GetValueOrDefault(0)).ToString("N0")) đ</span></td>
+                                    <td><span class="price">@((item.quanlity * item.SanPham.GiaTien).ToString("N0")) đ</span></td>
                                 </tr>
-                                <span style="display:none"> @(ads += (item.quanlity * item.SanPham.GiaTien.GetValueOrDefault(0)).ToString())</span>
+                                <span style="display:none"> @(ads += (item.quanlity * item.SanPham.GiaTien).ToString())</span>
                                 totalPrice += Convert.ToInt32(ads);
                             }
                         </tbody>
@@ -68,8 +71,8 @@
                 </div>
                 <div class="oder-summary-item">
                     <span class="title-transport-price">Tổng cộng</span>
-                   <span style="display:none"> @(totalPrice += 50000)</span>
-                <span class="transport-price">@totalPrice.ToString("N0") đ</span>
+                    <span style="display:none"> @(totalPrice += 50000)</span>
+                    <span class="transport-price">@totalPrice.ToString("N0") đ</span>
                 </div>
             </div>
             <div class="main">
@@ -85,27 +88,31 @@
                                 margin-bottom: 2em;">
                                     <p style="margin-bottom: 0.75em;">
                                         Bạn có tài khoản chưa?
-                                        <a href="@Url.Action("Login", "Login", new { id = UrlParameter.Optional })" style="color:blue;">Đăng nhập</a>
+                                        @{var session = (Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.Userlogin)Session[Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.CommonConstants.USER_SESSION]; }
+                                        <a href="@Url.Action("AccountInformation", "AccountInformation", new { id = session.UserID })">Xin Chào @session.lastName</a>
                                     </p>
                                     <div class="fieldset" style="margin: -0.45em;
                                 zoom: 1;">
+                                        @foreach(DatabaseProvider.EntityFramework.ThongTinKhachHang item in Model.user)
+                                        {                                      
                                         <div class="mb-3">
 
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Họ và tên" style="width: 90%;">
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Họ và tên" style="width: 90%;" value="@item.firstName @item.lastName">
                                         </div>
                                         <div class="mb-3">
 
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email" style="width: 90%;">
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email" style="width: 90%;" value="@item.email">
                                         </div>
                                         <div class="mb-3">
 
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Số điện thoại" style="width: 90%;">
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Số điện thoại" style="width: 90%;" value="@item.SDT">
                                         </div>
                                         <div class="mb-3">
 
-                                            <textarea class="form-control" placeholder="Địa chỉ" id="floatingTextarea" style="width: 90%;"></textarea>
+                                            <textarea class="form-control" placeholder="Địa chỉ" id="floatingTextarea" style="width: 90%;">@item.DiaChi</textarea>
+                                          
                                         </div>
-
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +121,7 @@
                             <form>
                                 <button type="button" class="btn btn-outline-secondary" style="width: 40%;float: right; margin-right: 50px;">Thanh toán</button>
                             </form>
-                            <a href="@Url.Action("Cart", "Cart", new { id = UrlParameter.Optional })" ><i class="fas fa-chevron-left"></i>  Giỏ hàng</a>
+                            <a href="@Url.Action("Cart", "Cart", new { id = UrlParameter.Optional })"><i class="fas fa-chevron-left"></i>  Giỏ hàng</a>
                         </div>
                     </div>
                 </div>
@@ -137,3 +144,4 @@
 </body>
 
 </html>
+

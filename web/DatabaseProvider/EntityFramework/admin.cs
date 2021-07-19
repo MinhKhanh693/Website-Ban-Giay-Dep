@@ -23,5 +23,7 @@ namespace DatabaseProvider.EntityFramework
         [Required]
         [StringLength(50)]
         public string email { get; set; }
+        [StringLength(50)]
+        public string FullName { get; set; }
     }
 }

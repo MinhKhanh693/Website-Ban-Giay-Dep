@@ -90,11 +90,23 @@
                             </div>
                         </div>
                         <div class="Checkout">
-                            <button id ="payment"name="Checkout" type="button" onclick="location.href='@Url.Action("Payment", "Payment", new { id = UrlParameter.Optional })'">
-                                Thanh Toán Ngay
-                                <br />
-                                (áp dụng cho Việt Nam)
-                            </button>
+                            @if (Session["USER_SESSION"] == null)
+                            {
+                                <button id="payment" name="Checkout" type="button" onclick="location.href='@Url.Action("Payment", "Payment", new { id = UrlParameter.Optional })'">
+                                    Thanh Toán Ngay
+                                    <br />
+                                    (áp dụng cho Việt Nam)
+                                </button>
+                            }
+                            else if(Session["USER_SESSION"] != null)
+                            {
+                                 var session = (Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.Userlogin)Session[Website_ban_giay_cua_cong_ty_TNHH_ABC.Code.CommonConstants.USER_SESSION];
+                                <button id="payment" name="Checkout" type="button" onclick="location.href='@Url.Action("PaymentUserLogin", "Payment", new { id = session.UserID })'">
+                                    Thanh Toán Ngay
+                                    <br />
+                                    (áp dụng cho Việt Nam)
+                                </button>
+                            }
                         </div>
                         <script src="~/Code/ControllersJS/Payment.js"></script>
                 

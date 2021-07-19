@@ -2,7 +2,12 @@
     font-family: "Montserrat";
     font-family: "FontAwesome" !important;
 }
-
+.active{
+    background-color:red;
+}
+.active a{
+    color:white !important;
+}
 
 img {
     max-width: 100%;

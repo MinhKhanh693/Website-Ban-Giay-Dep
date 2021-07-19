@@ -11,5 +11,7 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Areas.Admin.code
         public string username { get; set; }
         public int ID_admin { get; set; }
         public string email { get; set; }
+
+        public string FullName { get; set; }
     }
 }

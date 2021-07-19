@@ -12,9 +12,19 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Areas.Admin
             }
         }
 
-        public override void RegisterArea(AreaRegistrationContext context) 
+        public override void RegisterArea(AreaRegistrationContext context)
         {
-  
+
+            context.MapRoute(
+              "Home",
+              "Home",
+              new { action = "Index", Controller = "Home", id = UrlParameter.Optional }
+          );
+            context.MapRoute(
+              "DashBoard",
+              "DashBoard",
+              new { action = "DashBoard", Controller = "DashBoard", id = UrlParameter.Optional }
+          );
             context.MapRoute(
              "EditProduct",
              "EditProduct/{id}",
@@ -60,8 +70,6 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Areas.Admin
                 "Admin/{controller}/{action}/{id}",
                 new { action = "Login",Controller ="Login",id = UrlParameter.Optional }
              );
-
-           
 
         }
     }

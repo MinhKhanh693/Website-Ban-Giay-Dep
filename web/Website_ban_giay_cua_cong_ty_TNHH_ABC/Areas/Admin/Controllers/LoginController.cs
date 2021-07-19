@@ -33,8 +33,9 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC.Areas.Admin.Controllers
                 var adminSession = new AdminLogin();
                 adminSession.username = admin.username;
                 adminSession.ID_admin = admin.ID_admin;
+                adminSession.FullName = admin.FullName;
                 Session.Add(CommonConstants.ADMIN_SESSION, adminSession);
-                return Redirect("/AccountManagement");
+                return Redirect("/DashBoard");
             }
             else
             {

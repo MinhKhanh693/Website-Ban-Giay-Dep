@@ -15,70 +15,85 @@ namespace Website_ban_giay_cua_cong_ty_TNHH_ABC
 
             routes.MapRoute(
                    name: "Payment",
-                   url: "Payment/{id}",
+                   url: "Payment",
                    defaults: new { controller = "Payment", action = "Payment", id = UrlParameter.Optional },
                    namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
                );
             routes.MapRoute(
+                  name: "Paymentlogin",
+                  url: "Payment/User/{id}",
+                  defaults: new { controller = "Payment", action = "PaymentUserLogin", id = UrlParameter.Optional },
+                  namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
+              );
+            routes.MapRoute(
                name: "Cart",
                url: "Cart",
                defaults: new { controller = "Cart", action = "Cart", id = UrlParameter.Optional },
-               namespaces: new[] {"Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers"}
+               namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
            );
+
             routes.MapRoute(
              name: "SearchProduct",
              url: "Search/{keyword}/{page}",
-             defaults: new { controller = "SearchProduct", action = "SearchProduct", keyword= UrlParameter.Optional , page = UrlParameter.Optional },
+             defaults: new { controller = "SearchProduct", action = "SearchProduct", keyword = UrlParameter.Optional, page = UrlParameter.Optional },
              namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
          );
+
             routes.MapRoute(
               name: "ProductMale",
               url: "Male",
               defaults: new { controller = "ProductMale", action = "ProductMaleIndex", id = UrlParameter.Optional },
               namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
           );
+
             routes.MapRoute(
              name: "UpdateAccount",
              url: "UpdateAccount",
              defaults: new { controller = "AccountInformation", action = "UpdateAccountView", id = UrlParameter.Optional },
              namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
          );
+
             routes.MapRoute(
                name: "AccountInformation",
                url: "Account",
                defaults: new { controller = "AccountInformation", action = "AccountInformation", id = UrlParameter.Optional },
                namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
             );
+
             routes.MapRoute(
               name: "Favourite",
               url: "Favourite",
               defaults: new { controller = "Favourite", action = "Favourite", id = UrlParameter.Optional },
               namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
           );
+
             routes.MapRoute(
            name: "ProductGosto",
            url: "Gosto",
            defaults: new { controller = "ProductGosto", action = "ProductGostoIndex", id = UrlParameter.Optional },
            namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
-       );
-          routes.MapRoute(
-          name: "ProductBoy",
-          url: "Boy",
-          defaults: new { controller = "ProductBeTrai", action = "ProductBeTraiIndex", id = UrlParameter.Optional },
-          namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
-      );
-           routes.MapRoute(
-           name: "ProductGirls",
-           url: "Girls",
-           defaults: new { controller = "ProductBeGai", action = "ProductBeGaiIndex", id = UrlParameter.Optional },
-           namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
-       );
+            );
+
+            routes.MapRoute(
+            name: "ProductBoy",
+            url: "Boy",
+            defaults: new { controller = "ProductBeTrai", action = "ProductBeTraiIndex", id = UrlParameter.Optional },
+            namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
+            );
+
+            routes.MapRoute(
+            name: "ProductGirls",
+            url: "Girls",
+            defaults: new { controller = "ProductBeGai", action = "ProductBeGaiIndex", id = UrlParameter.Optional },
+            namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
+            );
+
             routes.MapRoute(
             name: "ProductAccessories",
             url: "Accessories",
             defaults: new { controller = "ProductPhuKien", action = "ProductPhuKienIndex", id = UrlParameter.Optional },
             namespaces: new[] { "Website_ban_giay_cua_cong_ty_TNHH_ABC.Controllers" }
-        );
+            );
 
             routes.MapRoute(
             name: "ProductFemale",

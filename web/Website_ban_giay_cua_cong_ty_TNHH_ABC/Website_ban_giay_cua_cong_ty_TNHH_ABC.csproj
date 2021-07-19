@@ -203,6 +203,7 @@
     <Compile Include="Areas\Admin\code\AdminLogin.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountManagementController.cs" />
     <Compile Include="Areas\Admin\Controllers\BillController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashBoardController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductAdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\_LoginAdminClinetController.cs" />
@@ -441,7 +442,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\_LoginAdminClinet\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Search\" />
   </ItemGroup>
@@ -486,6 +486,7 @@
     <Content Include="Areas\Admin\Views\ProductAdmin\DeleteProductView.cshtml" />
     <Content Include="Areas\Admin\Views\AccountManagement\DeleteAccountView.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_LoginAdminClinet.cshtml" />
+    <Content Include="Areas\Admin\Views\DashBoard\DashBoard.cshtml" />
     <None Include="packages.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Views\Web.config" />
@@ -510,6 +511,7 @@
     <Content Include="Views\AccountInformation\AccountInformation.cshtml" />
     <Content Include="Views\AccountInformation\UpdateAccountView.cshtml" />
     <Content Include="Views\Payment\Payment.cshtml" />
+    <Content Include="Views\Payment\PaymentUserLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DatabaseIO\DatabaseIO.csproj">

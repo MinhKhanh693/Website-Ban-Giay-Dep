@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" header-bottom-menu">
+                        <div class="header-bottom-menu">
                             <ul id="main-menu" class="clearfix">
                                 <li class="has-child">
                                     <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })">HOME</a>
@@ -69,7 +69,22 @@
                                     <a href="@Url.Action("ProductPhuKienIndex", "ProductPhuKien", new { id = UrlParameter.Optional })">PHỤ KIỆN</a>
                                 </li>
                             </ul>
+                            <script>
+                                $(function () {
+                                    // this will get the full URL at the address bar
+                                    var url = window.location.href;
+
+                                    // passes on every "a" tag 
+                                    $("#main-menu a").each(function () {
+                                        // checks if its the same on the address bar
+                                        if (url == (this.href)) {
+                                            $(this).closest("li").addClass(" active");
+                                        }
+                                    });
+                                });
+                            </script>
                         </div>
+                       
                         <div class="header-bottom-search">
 
                             @{ Html.RenderAction("_Search", "Search");}
@@ -90,6 +105,7 @@
                         }
                     });
                 });
+                
             </script>
         </header>
         <main clas="main-content" style="padding-top:90px;">

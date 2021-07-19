@@ -1,0 +1,169 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "DashBoard";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Bảng điều khiển</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        @*<i class="fa fa-comments fa-5x"></i>*@
+                        <i>VND</i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        @{ int sum = 0;}
+                        <span style="display:none;">@(sum += Model.countDoanhThu)</span>
+                        <div class="huge">@sum.ToString("N0");</div>
+
+                        <div>Tổng Doanh Thu !</div>
+                    </div>
+                </div>
+            </div>
+            <a href="@Url.Action("Bill", "Bill", new { id = UrlParameter.Optional })">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-green">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-tasks fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+
+                        <div class="huge">@Model.countSanPham</div>
+
+                        <div>Tổng sản phẩm !</div>
+                    </div>
+                </div>
+            </div>
+            <a href="@Url.Action("ProductAdmin", "ProductAdmin", new { id = UrlParameter.Optional })">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-yellow">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-shopping-cart fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">@Model.countUser</div>
+                        <div>Tổng người dùng !</div>
+                    </div>
+                </div>
+            </div>
+            <a href="@Url.Action("AccountManagement", "AccountManagement", new { id = UrlParameter.Optional })">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-support fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">@Model.countHoaDon</div>
+                        <div>Tổng Hóa Đơn!</div>
+                    </div>
+                </div>
+            </div>
+            <a href="@Url.Action("Bill", "Bill", new { id = UrlParameter.Optional })">
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-bar-chart-o fa-fw"></i> Biểu đồ doanh thu
+                <div class="pull-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle"
+                                data-toggle="dropdown">
+                            Năm
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right" role="menu">
+                            <li>
+                                <a href="#">Năm</a>
+                            </li>
+                            <li>
+                                <a href="#">Tháng</a>
+                            </li>
+                            <li>
+                                <a href="#">Ngày</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div id="morris-area-chart"></div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-bell fa-fw"></i> Ngày giờ hiện tại
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-comment fa-fw"></i> @Model.now
+                        <span class="pull-right text-muted small">
+                            
+                        </span>
+                    </a>                
+                </div>
+                <!-- /.list-group -->
+              
+            </div>
+            <!-- /.panel-body -->
+        </div>
+    </div>
+
+</div>

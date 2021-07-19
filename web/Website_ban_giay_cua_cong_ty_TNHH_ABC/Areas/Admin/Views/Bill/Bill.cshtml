@@ -42,8 +42,8 @@
                                     <td>@item.ID_SanPham</td>
                                     <td>@item.ID_ThongTinKhachHang</td>
                                     <td>@item.SoLuong</td>
-                                    <td>@item.TongTien</td>     
-                                    <td></td>
+                                    <td>@item.TongTien.GetValueOrDefault(0).ToString("N0")</td>     
+                                    <td>@item.NgayDatHang</td>
                                 </tr>}
                             </tbody>
                         </table>
