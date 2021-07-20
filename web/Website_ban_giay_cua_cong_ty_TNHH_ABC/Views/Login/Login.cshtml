@@ -35,16 +35,25 @@
                             @*<input type="text" class="form-input" placeholder=" ">*@
                             <label for="email" class="form-label">Password</label>
                         </div>
-                     
-                            <div class="button-login">
-                                <input type="submit" value="Đăng Nhập">
-                            </div>
-                            <div class="req-pass">
-                                <a href="@Url.Action("Register", "Register", new { id = UrlParameter.Optional })" title="Đăng ký">Chưa có tài khoản? Đăng ký </a>
-                            </div>
-                            <div class="req-pass">
-                                <a href="#">Quên Mật Khẩu </a>
-                            </div>
+
+                        <div class="button-login">
+                            <input type="submit" value="Đăng Nhập">
+                        </div>
+                        <div class="req-pass">
+                            <a href="@Url.Action("Register", "Register", new { id = UrlParameter.Optional })" title="Đăng ký">Chưa có tài khoản? Đăng ký </a>
+                        </div>
+                        <div class="req-pass">
+                            <a href="#">Quên Mật Khẩu </a>
+                        </div>
+                        <a class="btn btn-block btn-social btn-facebook" style="margin-top:10px; border-radius:20px;">
+                            <i class="fab fa-facebook-f" style="margin-top:5px;"></i> Sign in with Facebook
+                        </a>
+                        <a class="btn btn-block btn-social btn-instagram" style="margin-top:10px;border-radius:20px;">
+                            <i class="fab fa-instagram" style="margin-top:5px;"></i> Sign in with Instagram
+                        </a>
+                        <a class="btn btn-block btn-social btn-google-plus" style="margin-top:10px;border-radius:20px;">
+                            <i class="fab fa-google-plus" style="margin-top:5px;"></i> Sign in with Google
+                        </a>
 
                     </form>
                         }

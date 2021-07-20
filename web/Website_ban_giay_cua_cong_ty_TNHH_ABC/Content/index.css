@@ -252,15 +252,16 @@ a{
 
     .logo-wrap .svg-logo {
         height: 70px;
-        width: 100px;
+        width: 160px;
     }
 
 .svg-logo img {
-    width: 100%;
+    width: 120%;
     height: 100%;
     object-fit: cover;
     justify-content: center;
 }
+
 /* --main-menu-- */
 
 .header-bottom-menu {

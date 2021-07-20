@@ -24,6 +24,20 @@
     <link rel="stylesheet" href="~/Content/ChiTietSanPham.css">
     <link rel="stylesheet" href="~/Content/Cart.css">
     <link rel="stylesheet" href="~/Content/ThongTinTaiKhoan.css">
+
+    <link href="~/Areas/Admin/content/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="~/Areas/Admin/content/css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Social Buttons CSS -->
+    <link href="~/Areas/Admin/content/css/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/Areas/Admin/content/css/startmin.css" rel="stylesheet">
+
+     @*Custom Fonts*@ 
+    <link href="~/Areas/Admin/content/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
@@ -43,8 +57,8 @@
                         <div class=" first-logo">
                             <div class="logo-wrap">
                                 <div class="svg-logo">
-                                    <img src="~/image/images/bitis_logo1200.png" alt="">
-                                    <a></a>
+                                    <img src="~/image/images/CôngtyTNHHABC.png" alt="">
+                                    <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })"></a>
                                 </div>
                             </div>
                         </div>
@@ -116,8 +130,8 @@
                 <div class="footer-hashtag-title">
                     <h2>
                         HASHTAG
-                        <a href="#">
-                            BITIS
+                        <a href="@Url.Action("Index", "Home", new { id = UrlParameter.Optional })">
+                            ABC
                         </a>
                         ĐỂ CÓ CƠ HỘI XUẤT HIỆN TRÊN WEBSITE CHÚNG TÔI
                     </h2>
@@ -239,7 +253,8 @@
         </footer>
         @RenderSection("Cart", required: false)
     </div>
- 
+
+
 </body>
 
 </html>

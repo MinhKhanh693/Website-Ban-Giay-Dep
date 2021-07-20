@@ -28,6 +28,7 @@
                                 <tr>
                                     <th>Mã hóa đơn</th>
                                     <th>Mã sản phẩm</th>
+                         
                                     <th>Mã định danh khách hàng</th>
                                     <th>Số lượng</th>
                                     <th>Tổng tiền</th>
@@ -40,10 +41,12 @@
                                 <tr class="gradeA">
                                     <td>@item.ID_HoaDon</td>
                                     <td>@item.ID_SanPham</td>
+                                   
                                     <td>@item.ID_ThongTinKhachHang</td>
                                     <td>@item.SoLuong</td>
-                                    <td>@item.TongTien.GetValueOrDefault(0).ToString("N0")</td>     
+                                    <td>@item.TongTien.GetValueOrDefault(0).ToString("N0")</td>
                                     <td>@item.NgayDatHang</td>
+
                                 </tr>}
                             </tbody>
                         </table>
