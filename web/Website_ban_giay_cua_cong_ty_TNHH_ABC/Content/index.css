@@ -1,5 +1,5 @@
 * {
-    font-family: "Montserrat";
+    font-family: 'Poppins', sans-serif !important; 
     font-family: "FontAwesome" !important;
 }
 .active{
@@ -15,7 +15,7 @@ img {
     object-fit: cover;
 }
 a{
-    text-decoration:none;
+    text-decoration:none !important;
     color:black;
 }
 #BackTop{

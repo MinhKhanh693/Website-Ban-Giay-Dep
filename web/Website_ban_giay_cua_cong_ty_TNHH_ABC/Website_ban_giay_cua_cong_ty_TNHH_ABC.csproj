@@ -294,6 +294,7 @@
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\payment.css" />
     <Content Include="Content\ProductIndex.css" />
+    <Content Include="Content\Reset.css" />
     <Content Include="Content\ThongTinTaiKhoan.css" />
     <Content Include="Global.asax" />
     <Content Include="image\baner-cate\banner-cate-1_76bca9574e71406cb7536394202d76ad_master.jpg" />
